@@ -6,6 +6,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://mindmattersmemphis.github.io',
+  base: 'astrosite',
   integrations: [react(), tailwind()],
   vite: {
     ssr: {
