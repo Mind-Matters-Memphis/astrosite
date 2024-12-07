@@ -17,7 +17,7 @@ interface Link {
   className?: string;
 }
 
-const Link = ({ href, ...props }: Link) => {
+const NavLink = ({ href, ...props }: Link) => {
   // const location = useLocation();
   // const isActive = location?.pathname === href;
 
@@ -31,7 +31,7 @@ const Link = ({ href, ...props }: Link) => {
 // currently lacking animation for dropdown
 // [data-motion] attribute missing from NavigationMenu.Content..?
 
-const linkStyle = "block p-8 text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md lg:hover:text-sand lg:hover:bg-midnight lg:relative lg:p-4 lg:before:absolute lg:before:bottom-[15%] lg:before:left-[50%] lg:before:h-[2px] lg:before:w-0 lg:before:origin-center lg:before:rounded-sm lg:before:bg-sand lg:before:transition-all lg:before:duration-300 lg:before:ease-in-out lg:before:content-[''] lg:hover:before:left-[0%] lg:hover:before:w-[100%] lg:active:left-[1px] lg:active:top-[2px] lg:active:shadow-none xl:mx-4";
+const linkStyle = "block p-8 text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand lg:hover:text-sand lg:hover:bg-midnight lg:relative lg:p-4 lg:before:absolute lg:before:bottom-[15%] lg:before:left-[50%] lg:before:h-[2px] lg:before:w-0 lg:before:origin-center lg:before:rounded-sm lg:before:bg-sand lg:before:transition-all lg:before:duration-300 lg:before:ease-in-out lg:before:content-[''] lg:hover:before:left-[0%] lg:hover:before:w-[100%] lg:active:left-[1px] lg:active:top-[2px] lg:active:shadow-none xl:mx-4";
 
 const NavMenu: React.FC<NavMenu> = () => (
   <NavigationMenu.Root className="hidden relative z-50 lg:flex w-full bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay *:w-full">
@@ -45,9 +45,9 @@ const NavMenu: React.FC<NavMenu> = () => (
       <div id="spacer" className="grow"></div>
 
       <NavigationMenu.Item>
-        <a href="/meet-dr-gould">
+        <NavLink href="/meet-dr-gould">
           About
-        </a>
+        </NavLink>
       </NavigationMenu.Item>
 
       <NavigationMenu.Item className="relative">
@@ -64,14 +64,14 @@ const NavMenu: React.FC<NavMenu> = () => (
         </NavigationMenu.Content>
       </NavigationMenu.Item>
       <NavigationMenu.Item>
-        <a href="/forensic-evaluations">
+        <NavLink href="/forensic-evaluations">
           Forensic Evaluations
-        </a>
+        </NavLink>
       </NavigationMenu.Item>
       <NavigationMenu.Item>
-        <a href="/contact" >
+        <NavLink href="/contact" >
           Contact
-        </a>
+        </NavLink>
       </NavigationMenu.Item>
     </NavigationMenu.List>
   </NavigationMenu.Root>

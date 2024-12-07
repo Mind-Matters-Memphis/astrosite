@@ -18,7 +18,7 @@ interface Link {
   className?: string;
 }
 
-const Link = ({ href, className, ...props }: Link) => {
+const NavLink = ({ href, className, ...props }: Link) => {
   // const location = useLocation();
   // const isActive = location?.pathname === href;
 
@@ -36,7 +36,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
   <NavigationMenu.Root className="peer relative z-50 flex w-full group bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay lg:hidden *:w-full">
     <NavigationMenu.List className="flex items-center relative">
       <NavigationMenu.Item className="">
-        <a href="/" className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl">
+        <a href="/" className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md">
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>
@@ -52,35 +52,35 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
           <NavigationMenu.Sub data-orientation="vertical" defaultValue="about">
             <NavigationMenu.List>
               <NavigationMenu.Item value="about">
-                <a href="/meet-dr-gould" className="p-8">
+                <NavLink href="/meet-dr-gould" className="p-8">
                   About
-                </a>
+                </NavLink>
               </NavigationMenu.Item>
               <NavigationMenu.Item>
-                <a href="/clinical-neuropsychology" className="p-8">
+                <NavLink href="/clinical-neuropsychology" className="p-8">
                   Clinical Neuropsychology
-                </a>
+                </NavLink>
                 <div className="pl-12 flex gap-4 items-center">
                   {/* <CornerDownRight /> */}
-                  <a href="/forms" className="grow p-6">
+                  <NavLink href="/forms" className="grow p-6">
                     Forms
-                  </a>
+                  </NavLink>
                 </div>
               </NavigationMenu.Item>
               <NavigationMenu.Item>
-                <a href="/forensic-evaluations" className="p-8">
+                <NavLink href="/forensic-evaluations" className="p-8">
                   Forensic Evaluations
-                </a>
+                </NavLink>
               </NavigationMenu.Item>
               <NavigationMenu.Item>
-                <a href="/cognitive-aging" className="p-8">
+                <NavLink href="/cognitive-aging" className="p-8">
                   Cognitive Aging
-                </a>
+                </NavLink>
               </NavigationMenu.Item>
               <NavigationMenu.Item>
-                <a href="/contact" className="p-8">
+                <NavLink href="/contact" className="p-8">
                   Contact
-                </a>
+                </NavLink>
               </NavigationMenu.Item>
             </NavigationMenu.List>
           </NavigationMenu.Sub>
