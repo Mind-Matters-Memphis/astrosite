@@ -58,9 +58,9 @@ const NavMenu: React.FC<NavMenu> = () => (
         </NavigationMenu.Trigger>
         <NavigationMenu.Content className="absolute bg-midnight rounded-b-md -left-[50%] peer-data-[open=true]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft">
           <ul className="flex flex-col justify-center p-4">
-            <ListItem href="/clinical-neuropsychology" title="Clinical Neuropsychology" className="" />
-            <ListItem href="/cognitive-aging" title="Cognitive Aging" className="" />
-            <ListItem href="/forms" title="Forms" className="flex" />
+            <ListItem href={urlBase + "/clinical-neuropsychology"} title="Clinical Neuropsychology" className="" />
+            <ListItem href={urlBase + "/cognitive-aging"} title="Cognitive Aging" className="" />
+            <ListItem href={urlBase + "/forms"} title="Forms" className="flex" />
           </ul>
         </NavigationMenu.Content>
       </NavigationMenu.Item>

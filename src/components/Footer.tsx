@@ -28,6 +28,7 @@ const ContactListItem = ({ icon, imgName, text, url }: Props) => {
 };
 
 export const Footer = () => {
+  const baseUrl = "/astrosite";
   const contactItems = [
     {
       icon: phone,
@@ -80,7 +81,7 @@ export const Footer = () => {
       <div className="flex flex-col md:grid md:grid-rows-2 justify-center md:items-end border-b-2 border-sage lg:border-b-4">
         <div className="self-center md:self-start border-b-2 border-sage md:border-b-0 md:pt-6">
           <a
-            href="/"
+            href={baseUrl}
             className="flex justify-center cursor-pointer py-4"
             aria-label="Return to Mind Matters Memphis homepage"
           >
@@ -119,7 +120,7 @@ export const Footer = () => {
             <ul className="flex flex-col justify-between md:gap-2 md:items-start">
               <li className={listItemStyle}>
                 <a
-                  href="/clinical-neuropsychology"
+                  href={baseUrl + "/clinical-neuropsychology"}
                   className={altLinkStyle}
                 >
                   <span className="z-20">Clinical Neuropsychology</span>
@@ -127,24 +128,24 @@ export const Footer = () => {
               </li>
               <li className={listItemStyle}>
                 <a
-                  href="/forensic-evaluations"
+                  href={baseUrl + "/forensic-evaluations"}
                   className={altLinkStyle}
                 >
                   <span className="z-20">Forensic Evaluations</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/cognitive-aging" className={altLinkStyle}>
+                <a href={baseUrl + "/cognitive-aging"} className={altLinkStyle}>
                   <span className="z-20">Healthy Cognitive Aging</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/meet-dr-gould" className={altLinkStyle}>
+                <a href={baseUrl + "/meet-dr-gould"} className={altLinkStyle}>
                   <span className="">Meet Dr. Gould</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/forms" className={altLinkStyle}>
+                <a href={baseUrl + "/forms"} className={altLinkStyle}>
                   <span className="">Forms</span>
                 </a>
               </li>
