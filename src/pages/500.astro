@@ -6,9 +6,13 @@ interface Props {
   error: unknown;
 }
 const { error } = Astro.props;
+const pageInfo = {
+  title: "500 - Mind Matters Memphis",
+  description: "Custom error page for unexpected errors."
+};
 ---
 
-<Layout>
+<Layout page={pageInfo}>
   <div class="p-4 sm:mt-10 md:mt-24 bg-dust font-accessbody text-midnight">
     <div class="flex justify-center">
       <img

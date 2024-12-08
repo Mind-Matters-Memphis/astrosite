@@ -3,9 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import logo from "../assets/imgs/logo/logoColor.png";
 import errorIcon from "../assets/imgs/icons/alert-circle-outline.svg";
 
+const pageInfo = {
+  title: "404 - Mind Matters Memphis",
+  description: "Custom page for 404 errors."
+};
 ---
 
-<Layout>
+<Layout page={pageInfo}>
   <div class="p-4 sm:mt-10 md:mt-24 bg-dust font-accessbody text-midnight">
     <div class="flex justify-center">
       <img src={logo.src} alt="Mind Matters Memphis logo" class="px-12 sm:max-w-96" />
