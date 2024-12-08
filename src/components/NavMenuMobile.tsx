@@ -1,7 +1,7 @@
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-// import { Link as a, useLocation } from "react-router-dom";
-// import { ChevronDown, CornerDownRight } from "lucide-react";
+import arrow from "../assets/imgs/icons/arrow-right.svg";
+import chevron from "../assets/imgs/icons/chevron-down.svg";
 
 interface NavMenuMobile {
   className?: string;
@@ -46,7 +46,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
       <NavigationMenu.Item>
         <NavigationMenu.Trigger className="flex gap-4 items-center p-4 px-2 sm:px-6 group">
           Menu
-          {/* <ChevronDown className="transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" /> */}
+          <img src={chevron.src} alt="" className="h-8 w-8 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" />
         </NavigationMenu.Trigger>
         <NavigationMenu.Content className="absolute bg-midnight top-16 md:top-[72px] left-0 w-full min-h-screen" data-orientation="vertical" >
           <NavigationMenu.Sub data-orientation="vertical" defaultValue="about">
@@ -61,7 +61,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
                   Clinical Neuropsychology
                 </NavLink>
                 <div className="pl-12 flex gap-4 items-center">
-                  {/* <CornerDownRight /> */}
+                  <img src={arrow.src} alt="Arrow" className="h-8 w-8 mb-2"/>
                   <NavLink href="/forms" className="grow p-6">
                     Forms
                   </NavLink>
