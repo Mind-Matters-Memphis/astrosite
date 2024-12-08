@@ -1,6 +1,7 @@
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
+const urlBase = "/astrosite";
 
 interface NavMenu {
   className?: string;
@@ -24,7 +25,7 @@ const NavLink = ({ href, ...props }: Link) => {
   return (
     // <NavigationMenu.Link asChild active={isActive}>
     <NavigationMenu.Link asChild>
-      <a href={href} className={linkStyle} {...props} />
+      <a href={urlBase + href} className={linkStyle} {...props} />
     </NavigationMenu.Link>
   );
 };
@@ -37,7 +38,7 @@ const NavMenu: React.FC<NavMenu> = () => (
   <NavigationMenu.Root className="hidden relative z-50 lg:flex w-full bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay *:w-full">
     <NavigationMenu.List className="flex w-full items-center">
       <NavigationMenu.Item className="py-4 lg:py-8">
-        <a href="/" className="p-4 lg:p-8 sm:text-4xl">
+        <a href={urlBase} className="p-4 lg:p-8 sm:text-4xl">
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>

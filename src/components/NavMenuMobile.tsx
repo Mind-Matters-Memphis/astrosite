@@ -3,6 +3,8 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import arrow from "../assets/imgs/icons/arrow-right.svg";
 import chevron from "../assets/imgs/icons/chevron-down.svg";
 
+const urlBase = "/astrosite";
+
 interface NavMenuMobile {
   className?: string;
 }
@@ -25,7 +27,7 @@ const NavLink = ({ href, className, ...props }: Link) => {
   return (
     // <NavigationMenu.Link asChild active={isActive}>
     <NavigationMenu.Link asChild >
-      <a href={href} className={className + " " + linkStyle} {...props} />
+      <a href={urlBase + href} className={className + " " + linkStyle} {...props} />
     </NavigationMenu.Link>
   );
 };
@@ -36,7 +38,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
   <NavigationMenu.Root className="peer relative z-50 flex w-full group bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay lg:hidden *:w-full">
     <NavigationMenu.List className="flex items-center relative">
       <NavigationMenu.Item className="">
-        <a href="/" className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md">
+        <a href={urlBase} className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md">
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>
