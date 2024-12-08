@@ -7,32 +7,32 @@
     font-family: "Bebas";
     font-style: normal;
     font-display: swap;
-    src: url(../src/assets/fonts/BebasNeueRegular.ttf) format("truetype");
+    src: url(../assets/fonts/BebasNeueRegular.ttf) format("truetype");
   }
   @font-face {
     font-family: "Reem Kufi";
     font-style: normal;
     font-display: swap;
-    src: url(../src/assets/fonts/ReemKufi.ttf) format("truetype");
+    src: url(../assets/fonts/ReemKufi.ttf) format("truetype");
   }
   @font-face {
     font-family: "Carlito";
     font-style: normal;
     font-display: swap;
-    src: url(../src/assets/fonts/Carlito-Regular.ttf) format("truetype");
+    src: url(../assets/fonts/Carlito-Regular.ttf) format("truetype");
   }
   @font-face {
     font-family: "CarlitoItalic";
     font-style: italic;
     font-display: swap;
-    src: url(../src/assets/fonts/Carlito-Italic.ttf) format("truetype");
+    src: url(../assets/fonts/Carlito-Italic.ttf) format("truetype");
   }
   @font-face {
     font-family: "CarlitoBold";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(../src/assets/fonts/Carlito-Bold.ttf) format("truetype");
+    src: url(../assets/fonts/Carlito-Bold.ttf) format("truetype");
   }
   :root {
     --radius: 0.5rem;
