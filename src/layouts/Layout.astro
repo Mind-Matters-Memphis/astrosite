@@ -1,3 +1,10 @@
+---
+import NavMenu from "../components/NavMenu";
+import NavMenuMobile from "../components/NavMenuMobile";
+import { Footer } from "../components/Footer";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +15,10 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
+    <NavMenu client:load />
+    <NavMenuMobile client:load />
 		<slot />
+    <Footer />
 	</body>
 </html>
 

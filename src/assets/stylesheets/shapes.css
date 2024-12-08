@@ -1,0 +1,204 @@
+.contact-parallelogram {
+  --p: 50px; /* control the shape (can be percentage) */
+  height: 250px;
+  aspect-ratio: 3/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  /* background: #D95B43; */
+}
+.contact-chevron {
+  --s: 50px; /* control the shape (can be percentage) */
+
+  aspect-ratio: 3/5;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+}
+.contact-zigzag {
+  --mask: conic-gradient(from -135deg at right,#6d444400,#000 1deg 89deg,#c2191900 90deg) 50%/100% 120px;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.contact-corners {
+  clip-path: polygon(0 63.4px,50px 50px,63.4px 0,calc(100% - 63.4px) 0,calc(100% - 50px) 50px,100% 63.4px,100% calc(100% - 63.4px),calc(100% - 50px) calc(100% - 50px),calc(100% - 63.4px) 100%,63.4px 100%,50px calc(100% - 50px),0 calc(100% - 63.4px));
+}
+.contact-ellipse {
+  clip-path: ellipse(100% 95% at bottom);
+}
+.contact-curved-top {
+  --c: 60; /* control the curvature (a percentage value without unit bigger than 50%)*/
+    
+  aspect-ratio: 3/2;
+  mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(100% + 100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+  clip-path: ellipse(calc(var(--c)*1%) 100% at bottom);
+}
+.contact-curved-bottom {
+  --c: 60; /* control the curvature (a percentage value without unit bigger than 50%)*/
+    
+  aspect-ratio: 3/2;
+  mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+  clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+}
+.contact-curved-right {
+  --c: 55; /* control the curvature (a percentage value without unit bigger than 50%)*/
+  
+  aspect-ratio: 2/3;
+  mask: radial-gradient(100% calc(var(--c)*1%) at calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+  clip-path: ellipse(100% calc(var(--c)*1%) at left);
+}
+.contact-curved-left {
+  --c: 55; /* control the curvature (a percentage value without unit bigger than 50%)*/
+  
+  aspect-ratio: 2/3;
+  mask: radial-gradient(100% calc(var(--c)*1%) at calc(100% + 100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+  clip-path: ellipse(100% calc(var(--c)*1%) at right);
+}
+.contact-ribbon {
+  --r: 3rem; /* control the cutout */
+  
+  padding-right: calc(var(--r) + .25em);
+  line-height: 1.8;
+  clip-path: polygon(-100vw 0,calc(100% - var(--r)) 0,100% 50%,calc(100% - var(--r)) 100%,-100vw 100%);
+  border-image: conic-gradient(#45ada8 0 0) fill 0/100vw;
+  width: 95%;
+}
+.contact-pin {
+  aspect-ratio: 2/3;
+  mask: 
+    conic-gradient(from -30deg at bottom,#0000,#000 1deg 59deg,#0000 60deg) bottom/100% 50% no-repeat, 
+    radial-gradient(circle at 50% calc(100% / 3),#0000 21.5%,#000 22% 44%,#0000 44.5%);
+  background: #ec1a23;
+}
+.parking-ribbon {
+  --r: .4em; /* control the ribbon shape (the radius) */
+
+  position: absolute;
+  top: 20px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: 0 .5em calc(2*var(--r));
+  border-radius: var(--r);
+  --_g:100%/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,rgb(233 227 220) 0)
+     0 0/calc(100% - var(--r)) 100%;
+}
+
+.about-parallelogram {
+  --p: 60px; /* control the shape (can be percentage) */
+  aspect-ratio: 3/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+}
+.about-parallelogram-lite {
+  --p: 30px; /* control the shape (can be percentage) */
+  aspect-ratio: 3/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+}
+.about-parallelogram-wrap {
+  filter: drop-shadow(-1px 6px 3px rgba(39, 41, 50, 0.35));
+}
+.about-rounded-img {
+  aspect-ratio: 3/2;
+    /* update the 85% to control the curvature; you can also update the 50% to control the position */
+  clip-path: ellipse(85% 100% at 50% 100%);
+}
+.img-frame {
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid transparent;
+  outline: 1px solid rgb(39, 41, 50);
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,rgb(39, 41, 50) 0);
+}
+.alt-img-frame {
+  box-shadow:
+  -50px -50px 0 -40px rgba(77, 126, 168, 1),
+  /* 50px 50px 0 -40px rgba(77, 126, 168, 1); */
+  /* -50px -50px 0 -40px rgba(157, 184, 168, 1), */
+  /* 50px 50px 0 -40px rgba(157, 184, 168, 1); */
+  /* -50px -50px 0 -40px rgba(213, 87, 59, 1), */
+  50px 50px 0 -40px rgba(213, 87, 59, 1);
+}
+.quote-frame {
+  /* box-shadow:
+  -25px -25px 0 -20px rgba(39, 41, 50, 1),
+  25px 25px 0 -20px rgba(39, 41, 50, 1); */
+}
+@media screen and (min-width: 768px) {
+  .quote-frame-sage {
+    box-shadow:
+    /* -50px -50px 0 -40px rgba(39, 41, 50, 1), */
+    /* 50px 50px 0 -40px rgba(77, 126, 168, 1); */
+    -50px -50px 0 -40px rgba(157, 184, 168, 1),
+    50px 50px 0 -40px rgba(157, 184, 168, 1);
+    /* -50px -50px 0 -40px rgba(213, 87, 59, 1), */
+    /* 50px 50px 0 -40px rgba(39, 41, 50, 1); */
+  }
+  .quote-frame-inlet {
+    box-shadow:
+    -50px -50px 0 -40px rgba(77, 126, 168, 1),
+    50px 50px 0 -40px rgba(77, 126, 168, 1);
+    /* -50px -50px 0 -40px rgba(213, 87, 59, 1), */
+    /* 50px 50px 0 -40px rgba(39, 41, 50, 1); */
+  }
+  .quote-frame-coral {
+    box-shadow:
+    /* -50px -50px 0 -40px rgba(39, 41, 50, 1), */
+    /* 50px 50px 0 -40px rgba(77, 126, 168, 1); */
+
+    -50px -50px 0 -40px rgba(213, 87, 59, 1),
+    50px 50px 0 -40px rgba(213, 87, 59, 1);
+  }
+}
+.headline-top {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50px) calc(100% - 50px),50% 100%,calc(50% - 50px) calc(100% - 50px),0 calc(100% - 50px));
+}
+.headline-bottom {
+  clip-path: polygon(0 0,calc(50% - 4.14px - 50px) 0,50% calc(50px + 4.14px),calc(50% + 4.14px + 50px) 0,100% 0,100% 100%,0 100%);
+  margin-top: -40px;
+}
+.cognitive-chevron {
+  --s: 40px; /* control the shape (can be percentage) */
+
+  aspect-ratio: 3/5;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+}
+.cognitive-parallelogram-mini {
+  --p: 30px; /* control the shape (can be percentage) */
+  aspect-ratio: 13/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+}
+.cognitive-sparkle {
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+}
+.cognitive-rounded-edge {
+  aspect-ratio: 3/2;
+  /* update the 85% to control the curvature
+     you can also update the 50% to control the position
+  */
+  clip-path: ellipse(85% 100% at 50% 0%);
+}
+.cognitive-curved-edge {
+  --c: 70px; /* control the curvature (works with percentage) */
+  aspect-ratio: 6/2;
+    /* you can also update the 60%  */
+  mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 2px),#000);
+}
+.forensic-parallelogram {
+  --p: 60px; /* control the shape (can be percentage) */
+  aspect-ratio: 4.5/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+}
+.forensic-parallelogram-lite {
+  --p: 48px; /* control the shape (can be percentage) */
+  aspect-ratio: 4.5/2;
+  clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+}
+.forensic-parallelogram-wrap {
+  filter: drop-shadow(-1px 6px 3px rgba(39, 41, 50, 0.35));
+}
+.forensic-chevron {
+  --s: 70px; /* control the shape (can be percentage) */
+  aspect-ratio: 3/5;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+}
