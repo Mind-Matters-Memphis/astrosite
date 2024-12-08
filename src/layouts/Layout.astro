@@ -2,23 +2,46 @@
 import NavMenu from "../components/NavMenu";
 import NavMenuMobile from "../components/NavMenuMobile";
 import { Footer } from "../components/Footer";
+import thumbnail from "../assets/imgs/logo/logoColorBg.png";
 import "../styles/global.css";
+
+const { page, url } = Astro.props;
+const date = new Date();
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/faviconbrowser.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" property="og:title" content={page.title} />
+    <meta name="description" property="og:description" content={page.description} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url ? url : null} />
+    <meta property="og:site-name" content="Mind Matters Memphis" />
+    <meta name="image" property="og:image" content={thumbnail.src} />
+    <meta property="og:image:secure_url" content="https://github.com/Mind-Matters-Memphis/mindweb/raw/main/src/assets/imgs/logo/logoColorBg.png" />
+    <meta property="og:image-width" content="1224" />
+    <meta property="og:image-height" content="468" />
+    <meta name="author" content="Connor Warme" />
+    <meta name="publish_date" property="article:published_time" content="2024-12-08" />
+    <meta property="article:modified_time" content={date.toISOString()}/>
+    <meta name="generator" content={Astro.generator} />
+		<title>{page.title}</title>
 	</head>
 	<body>
-    <NavMenu client:load />
-    <NavMenuMobile client:load />
-		<slot />
-    <Footer />
+    <div class="font-accessbody bg-dust">
+      <div id="top"></div>
+      <a href="#main-content" class="focusable visually-hidden text-midnight text-2xl">Skip to main content</a>
+      <NavMenu client:load />
+      <NavMenuMobile client:load />
+      <main id="main-content" class="peer-has-[[data-state=open]]:blur-sm">
+        <slot />
+      </main>
+      <Footer />
+    </div>
 	</body>
 </html>
 

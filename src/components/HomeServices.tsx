@@ -1,4 +1,7 @@
 // import { MdOutlineArrowRight as Arrow } from "react-icons/md";
+import arrowCoral from "../assets/imgs/icons/chevron-right.svg";
+import arrowSage from "../assets/imgs/icons/chevron-sage.svg";
+import arrowInlet from "../assets/imgs/icons/chevron-inlet.svg";
 import "../assets/stylesheets/shapes.css";
 type Service = {
   title: string;
@@ -8,6 +11,7 @@ type Service = {
   linkText: string;
   style: string;
   btnStyle: string;
+  arrowSrc: string;
   color: string;
 };
 type Props = {
@@ -41,9 +45,7 @@ const ServiceBlock = ({ service }: Props) => {
               key={index}
               className={`text-lg grid grid-cols-12 items-start list-inside`}
             >
-              {/* <Arrow
-                className={"h-8 w-8 justify-self-end text-" + service.color}
-              /> */}
+              <img src={service.arrowSrc} className={"h-8 w-8 justify-self-end text-" + service.color} />
               <span className="text-wrap col-span-10">{point}</span>
             </li>
           ))}
@@ -68,17 +70,19 @@ export const HomeServices = () => {
   const services = [
     {
       title: "Neuropsychological Assessments",
-      text: "Comprehensive neuropsychological evaluations for individuals with cognitive concerns.",
-      url: "/clinical-neuropsychology#top",
+      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
+      url: "/clinical-neuropsychology",
       points: [
-        "Lorem ipsum list item",
-        "Lorem ipsum list item",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+        "Set a treatment plan for cognitive rehabilitation",
+        "Establish a new functional baseline",
+        "Track cognition over time, especially after surgery or injury",
+        "Evaluate the cognitive side effects of medications",
       ],
       linkText: "Clinical Neuropsychology",
       // style: "xl:justify-self-end xl:mr-24 mt-10 border-inlet from-inlet/75",
       style: "border-inlet quote-frame-inlet",
       btnStyle: "border-inlet/75 hover:bg-inlet/15",
+      arrowSrc: arrowInlet.src,
       color: "inlet",
     },
     {
@@ -93,6 +97,7 @@ export const HomeServices = () => {
       linkText: "Forensic Evaluations",
       style: "border-sage quote-frame-sage",
       btnStyle: "border-sage/90 hover:bg-sage/25",
+      arrowSrc: arrowSage.src,
       color: "sage",
     },
     {
@@ -108,6 +113,7 @@ export const HomeServices = () => {
       // style: "xl:justify-self-start xl:ml-24 mb-10 border-coral from-coral/50",
       style: "mb-10 border-coral quote-frame-coral",
       btnStyle: "border-coral/70 hover:bg-coral/15",
+      arrowSrc: arrowCoral.src,
       color: "coral",
     },
   ];

@@ -8,9 +8,13 @@ import parkingGarage from "../assets/imgs/ParkingGarage.png";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
+const pageInfo = {
+  title: "Contact Us - Mind Matters Memphis",
+  description: "Contact information and driving directions for our boutique neuropsychology office in Memphis, TN."
+}
 ---
 
-<Layout>
+<Layout page={pageInfo} >
   <div class="text-accessbody">
     <div class="bg-dust text-midnight text-xl pt-8 sm:p-8 flex flex-col gap-8">
       <div class="contact-parallelogram bg-sand h-40 sm:h-50 md:h-64 flex flex-col justify-center justify-self-center mx-4 sm:mx-12 shadow-2xl">
@@ -76,7 +80,7 @@ import "../styles/global.css";
           </p>
           <p class="px-8">
             Please complete the referral form and fax it - along with patient
-            records - to (901) 766-7550.
+            records - to 901-766-7550.
           </p>
           <button class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] sm:hover:before:left-[13%] sm:hover:before:w-[74%] active:left-[1px] active:top-[2px] active:shadow-none">
             Download Referral Form
@@ -89,7 +93,6 @@ import "../styles/global.css";
             >
               referrals@mindmattersmemphis.com
             </a>
-            .
           </p>
           <div class="p-1 w-fit mx-auto sm:hidden text-center">
             <p>Questions about referrals?</p>

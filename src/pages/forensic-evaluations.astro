@@ -3,10 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
+const pageInfo = {
+  title: "Forensic Neuropsychology IMEs - Mind Matters Memphis",
+  description: "Objective, independent neuropsychological evaluations for worker’s comp, disability, personal injury cases, and more."
+}
 ---
 
 
-<Layout>
+<Layout page={pageInfo} >
   <div class="bg-dust text-midnight text-xl">
     <div class="bg-sage">
       <div class="headline-top bg-inlet">

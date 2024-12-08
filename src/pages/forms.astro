@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import chevron from "../assets/imgs/icons/chevron-right.svg";
+import newPatient from "../assets/forms/new-patient-form.pdf";
+import roiDisclose from "../assets/forms/release-disclose.pdf";
+import roiObtain from "../assets/forms/release-obtain.pdf";
+import referral from "../assets/forms/referral-form.pdf";
+
+import "../assets/stylesheets/shapes.css";
+import "../styles/global.css";
+
+const pageInfo = {
+  title: "New Patient Forms - Mind Matters Memphis",
+  description: "View, download, and print new patient forms for your neuropsychology appointment."
+}
+---
+
+<Layout page={pageInfo} >
+  <div class="text-accessbody">
+    <div class="bg-dust text-midnight text-xl pt-8 sm:p-8 flex flex-col gap-8">
+      <div class="contact-parallelogram bg-sand h-40 sm:h-50 md:h-64 flex flex-col justify-center justify-self-center mx-4 sm:mx-12 shadow-2xl">
+        <span class="visually-hidden">
+          A decorative parallelogram element, sand color, framing the header
+          content.
+        </span>
+        <h1 class="text-midnight text-5xl sm:text-7xl xl:text-8xl font-accessdisplay font-bold uppercase text-center flex flex-col justify-center items-center">
+          Forms
+        </h1>
+      </div>
+      <div class="md:grid md:grid-cols-9">
+        <div class="hidden md:col-span-2 md:flex justify-end items-center mr-[12%]">
+          <div class="contact-chevron bg-inlet h-0 md:h-44 lg:h-56">
+            <span class="visually-hidden">
+              A decorative chevron element, big sky blue color, pointing to
+              the right.
+            </span>
+          </div>
+        </div>
+        <div class="sm:px-8 md:col-span-6 xl:col-span-5 flex flex-col">
+          <p class="p-8 pt-0">
+            The forms page is currently under construction!
+          </p>
+          <div class="sm:w-fit self-center p-2 pl-4">
+            <div class="flex items-center gap-2 p-2 sm:w-fit">
+              <div class="pl-2 flex gap-2 items-center">
+                <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+                <h2>Phone:</h2>
+              </div>
+              <a href="tel:+19017667500" class="underline">
+                901-766-7500
+              </a>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 p-2 sm:w-fit">
+              <div class="pl-2 flex gap-2 items-center">
+                <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+                <h2>Email:</h2>
+              </div>
+              <a
+                href="mailto:info@mindmattersmemphis.com"
+                class="underline"
+              >
+                info@mindmattersmemphis.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-midnight p-8 text-xl flex flex-col items-center">
+      <h2 class="text-2xl sm:text-3xl">
+        Mind Matters Memphis Patient Forms
+      </h2>
+      <ul class="sm:pl-4">
+        <li class="pl-2 flex gap-2 items-center">
+          <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+          <a href={newPatient} target="_blank" rel="noopener noreferrer" class="underline">
+            New Patient Paperwork
+          </a>
+        </li>
+        <li class="pl-2 flex gap-2 items-center">
+          <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+          <a href={roiDisclose} target="_blank" rel="noopener noreferrer" class="underline">
+            Release of Information - Disclose
+          </a>
+        </li>
+        <li class="pl-2 flex gap-2 items-center">
+          <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+          <a href={roiObtain} target="_blank" rel="noopener noreferrer" class="underline">
+            Release of Information - Obtain
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="text-midnight p-8 text-xl flex flex-col items-center">
+      <h2 class="text-2xl sm:text-3xl">Mind Matters Memphis Referral Form</h2>
+      <ul class="sm:pl-4 sm:pr-40">
+        <li class="pl-2 flex gap-2 items-center">
+          <img src={chevron.src} alt=">" class="text-coral h-8 w-8 shrink-0" />
+          <a href={referral} target="_blank" rel="noopener noreferrer" class="underline">
+            Referral Form
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Layout>
