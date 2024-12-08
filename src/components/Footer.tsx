@@ -119,7 +119,7 @@ export const Footer = () => {
             <ul className="flex flex-col justify-between md:gap-2 md:items-start">
               <li className={listItemStyle}>
                 <a
-                  href="/clinical-neuropsychology#top"
+                  href="/clinical-neuropsychology"
                   className={altLinkStyle}
                 >
                   <span className="z-20">Clinical Neuropsychology</span>
@@ -127,24 +127,24 @@ export const Footer = () => {
               </li>
               <li className={listItemStyle}>
                 <a
-                  href="/forensic-evaluations#top"
+                  href="/forensic-evaluations"
                   className={altLinkStyle}
                 >
                   <span className="z-20">Forensic Evaluations</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/cognitive-aging#top" className={altLinkStyle}>
+                <a href="/cognitive-aging" className={altLinkStyle}>
                   <span className="z-20">Healthy Cognitive Aging</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/meet-dr-gould#top" className={altLinkStyle}>
+                <a href="/meet-dr-gould" className={altLinkStyle}>
                   <span className="">Meet Dr. Gould</span>
                 </a>
               </li>
               <li className={listItemStyle}>
-                <a href="/forms#top" className={altLinkStyle}>
+                <a href="/forms" className={altLinkStyle}>
                   <span className="">Forms</span>
                 </a>
               </li>

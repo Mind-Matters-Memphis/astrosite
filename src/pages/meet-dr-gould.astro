@@ -1,33 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import headshotSmall from "../assets/imgs/HeadshotSm.jpeg";
+import CTA from "../components/CTA.astro";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
 const pageInfo = {
   title: "Meet Dr. Gould - Mind Matters Memphis",
-  description: "Dr. Gould helps neuropsychology patients maximize their quality of life. Learn more about her background and mission."
-}
-
+  description:
+    "Dr. Gould helps neuropsychology patients maximize their quality of life. Learn more about her background and mission.",
+};
 ---
 
-<Layout page={pageInfo} >
+<Layout page={pageInfo}>
   <div class="bg-dust text-midnight text-xl font-accessbody">
-    <div class="flex flex-col justify-center w-full py-4 about-parallelogram-wrap">
-      <div class="about-parallelogram bg-sage h-40 sm:h-48 md:h-64 flex flex-col justify-center items-center justify-self-center mx-4 sm:mx-12 shadow-2xl">
+    <div
+      class="flex flex-col justify-center w-full py-4 about-parallelogram-wrap"
+    >
+      <div
+        class="about-parallelogram bg-sage h-40 sm:h-48 md:h-64 flex flex-col justify-center items-center justify-self-center mx-4 sm:mx-12 shadow-2xl"
+      >
         <span class="visually-hidden">
           A decorative parallelogram element, sage green color, framing the
           header content.
         </span>
         <div class="drop-shadow-lg flex flex-col w-[80%] sm:w-2/3">
-          <h1 class="about-parallelogram-lite bg-midnight text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-accessdisplay text-sand h-20 sm:h-24 md:h-32 w-inherit flex items-center justify-center">
+          <h1
+            class="about-parallelogram-lite bg-midnight text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-accessdisplay text-sand h-20 sm:h-24 md:h-32 w-inherit flex items-center justify-center"
+          >
             Meet Dr. Gould
           </h1>
         </div>
       </div>
     </div>
     <div class="p-4 grid gap-4 justify-items-center">
-      <div class="grid md:grid-cols-2 md:items-center md:max-w-[1024px] md:pt-8">
+      <div
+        class="grid md:grid-cols-2 md:items-center md:max-w-[1024px] md:pt-8"
+      >
         <div class="flex justify-center">
           <img
             src={headshotSmall.src}
@@ -36,16 +45,16 @@ const pageInfo = {
           />
         </div>
         <p class="mt-4 md:mt-0 p-4 max-w-[500px] justify-self-center">
-          Dr. Gould is a board-certified neuropsychologist in Memphis, TN,
-          whose clinical practice focuses on adult patients with epilepsy,
-          traumatic brain injury (TBI), stroke, and other neurocognitive
-          concerns. She performs neuropsychological evaluations and provides
-          her patients with the education and strategies for optimizing their
-          brain health.
+          Dr. Gould is a board-certified neuropsychologist in Memphis, TN, whose
+          clinical practice focuses on adult patients with epilepsy, traumatic
+          brain injury (TBI), stroke, and other neurocognitive concerns. She
+          performs neuropsychological evaluations and provides her patients with
+          the education and strategies for optimizing their brain health.
         </p>
       </div>
       <div class="flex justify-center sm:p-4 sm:px-8 md:p-8 md:pt-16">
-        {/* <div class="grid gap-8 sm:p-8 md:grid-cols-3 md:grid-rows-3 md:gap-12 max-w-[1000px] items-center">
+        {
+          /* <div class="grid gap-8 sm:p-8 md:grid-cols-3 md:grid-rows-3 md:gap-12 max-w-[1000px] items-center">
           <p class="p-4 rounded-xl sm:rounded-none bg-dust md:col-span-2 border-8 border-sage quote-frame-sage">
             "Having a neurological illness can be associated with limitations
             to daily life. I get to provide patients with individualized plans
@@ -65,8 +74,11 @@ const pageInfo = {
             especially on the more social & mental health side which can
             traditionally be overlooked in a regular office setting."
           </p>
-        </div> */}
-        <div class="flex flex-col gap-4 p-4 font-accessitalic italic rounded-md sm:p-8 md:p-12 md:rounded-none max-w-[768px] items-center border-4 md:border-8 bg-dust border-sage quote-frame-sage">
+        </div> */
+        }
+        <div
+          class="flex flex-col gap-4 p-4 font-accessitalic italic rounded-md sm:p-8 md:p-12 md:rounded-none max-w-[768px] items-center border-4 md:border-8 bg-dust border-sage quote-frame-sage"
+        >
           <p class="">
             <i>
               "Neurospychology as a profession shares overlap between
@@ -88,30 +100,27 @@ const pageInfo = {
               "Having a neurological illness can be associated with limitations
               to daily life. I get to provide patients with individualized plans
               of care to help{" "}
-              <span class="font-accessbold font-bold">maximize quality of life</span>{" "}
+              <span class="font-accessbold font-bold"
+                >maximize quality of life</span
+              >{" "}
               within their own health context."
             </i>
           </p>
-          <p class="font-accessdisplay text-2xl self-end mr-4 sm:mr-16">- Dr. Gould</p>
+          <p class="font-accessdisplay text-2xl self-end mr-4 sm:mr-16">
+            - Dr. Gould
+          </p>
         </div>
       </div>
       <p class="max-w-prose p-4 md:p-8">
         Dr. Gould completed her graduate degree in clinical psychology with a
-        specialization in neuropsychology at the University of Memphis, and
-        was awarded her PhD in 2016 after completing an internship at the
-        University of Kansas School of Medicine-Wichita. She then completed a
+        specialization in neuropsychology at the University of Memphis, and was
+        awarded her PhD in 2016 after completing an internship at the University
+        of Kansas School of Medicine-Wichita. She then completed a
         neuropsychology fellowship in the Neurocognitive Assessment Lab at the
         University of Virginia.
       </p>
-      <div>
-        <p class="max-w-prose p-4 pt-0 md:p-8 md:pt-0">
-          Visit our{" "}
-          <a class="underline font-bold font-accessbold" href="/contact#top">
-            Contact page
-          </a>{" "}
-          for information on how to request an appointment or refer a patient
-          to Dr. Gould.
-        </p>
+      <div class="max-w-prose p-4 pt-0 md:p-8 md:pt-0">
+        <CTA />
       </div>
     </div>
   </div>

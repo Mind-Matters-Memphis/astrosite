@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CTA from "../components/CTA.astro";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
@@ -173,6 +174,11 @@ const pageInfo = {
                 If your client or loved one’s cognition is changing, it may be
                 time to have an independent cognitive evaluation.
               </p>
+              <div class="cognitive-parallelogram-mini bg-inlet w-40 m-4 justify-self-center mt-16 sm:p-8 sm:w-64 md:p-4 md:mt-12">
+                <span class="visually-hidden">
+                  Small blue parallelogram, serving to delineate items.
+                </span>
+              </div>
             </div>
           </div>
           <div class="forensic-chevron hidden bg-inlet h-56 lg:block lg:row-start-2 lg:col-start-1 self-center justify-self-center">
@@ -184,6 +190,18 @@ const pageInfo = {
         </div>
       </div>
     </div>
-    <div></div>
+    <div class="p-8 pt-4 md:pt-0">
+      <div class="min-h-40 flex flex-col items-center justify-evenly">
+        <p>
+          To learn more about our approach to Cognitive Aging Evaluations, visit the Healthy Cognitive Aging page.
+        </p>
+        <a
+          href="/cognitive-aging"
+          class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 px-6 m-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:left-[13%] hover:before:w-[74%] sm:hover:before:left-[18%] sm:hover:before:w-[64%] active:left-[1px] active:top-[2px] active:shadow-none"
+        >
+          Cognitive Aging
+        </a>
+      </div>
+    </div>
   </div>
 </Layout>
