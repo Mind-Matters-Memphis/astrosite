@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import chevron from "../assets/imgs/icons/chevron-right.svg";
+import referralForm from "../assets/forms/referral-form.pdf";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
@@ -20,27 +22,64 @@ const pageInfo = {
           Clinical Neuropsychology
         </h1>
       </div>
-      <div class="headline-bottom bg-midnight p-4">
-        <h1
-          class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-sand text-center pt-16 pb-8"
+      <div class="headline-bottom bg-dust p-4">
+        <h2
+          class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-inlet text-center pt-16 pb-8"
         >
           Comprehensive Assessments of Brain Function
-        </h1>
+        </h2>
         <div class="grid justify-items-center">
-          <div class="text-dust p-4 pb-12 max-w-[624px]">
+          <div class="text-midnight p-4 pb-12 max-w-[624px]">
             <p>
               Mind Matters Memphis provides clinical neuropsychological
               assessments for patients with stroke, traumatic brain injury
               (TBI), epilepsy, and more.
             </p>
-            <p class="pt-8">Clinical Assessments are used to:</p>
-            <ul class="list-disc grid gap-2 pl-4 sm:pl-8">
-              <li>Set a treatment plan for cognitive rehabilitation</li>
-              <li>Establish a new functional baseline</li>
+            <p class="pt-8 pb-4">Clinical Assessments are used to:</p>
+            <ul class="grid gap-2 pl-4 sm:pl-8">
               <li>
-                Track cognition over time, especially after surgery or injury
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>Set a treatment plan for cognitive rehabilitation</p>
+                </div>
               </li>
-              <li>Evaluate the cognitive side effects of medications</li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>Establish a new functional baseline</p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    Track cognition over time, especially after surgery or
+                    injury
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>Evaluate the cognitive side effects of medications</p>
+                </div>
+              </li>
             </ul>
             <div class="pt-8">
               <p class="italic font-accessitalic">
@@ -63,7 +102,6 @@ const pageInfo = {
                   >
                     info@mindmattersmemphis.com
                   </a>
-                  .
                 </i>
               </p>
             </div>
@@ -71,133 +109,275 @@ const pageInfo = {
         </div>
       </div>
       <div class="grid justify-center bg-dust">
-        <h2 class="text-3xl pt-8">!!!UNDER CONSTRUCTION!!!</h2>
-        <p>Remaining content is copied from Forensic page.</p>
-        <div
-          class="bg-dust p-8 grid lg:grid-cols-3 lg:grid-rows-2 max-w-[1000px] gap-8 lg:gap-24 lg:pt-16 lg:pb-0"
-        >
-          <div id="medical-evals" class="lg:col-span-2">
-            <div class="forensic-parallelogram-wrap max-w-[600px]">
-              <div
-                class="forensic-parallelogram bg-sage flex justify-center items-center w-[100%]"
-              >
-                <span class="visually-hidden">
-                  A decorative parallelogram element, sage green color, framing
-                  the header (h2) content.
-                </span>
-                <div class="drop-shadow-lg h-inherit w-[80%]">
-                  <h2
-                    class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl"
-                  >
-                    <span class="text-center">
-                      Independent Medical Evaluations
-                    </span>
-                  </h2>
-                </div>
-              </div>
+        <div class="about-parallelogram-wrap pb-2">
+          <div
+            class="contact-parallelogram bg-sand h-40 md:h-50 xl:h-64 flex flex-col justify-center justify-self-center mx-4 sm:mx-12 shadow-2xl w-[94dvw] sm:w-[88dvw] md:w-[80dvw]"
+          >
+            <span class="visually-hidden">
+              A decorative parallelogram element, sand color, framing the header
+              content.
+            </span>
+            <h3
+              class="text-midnight text-4xl sm:text-5xl xl:text-7xl font-accessdisplay font-bold uppercase text-center flex flex-col justify-center items-center px-10"
+            >
+              Individualized Plans of Care
+            </h3>
+          </div>
+        </div>
+        <div class="grid sm:justify-center p-8">
+          <div class="grid md:grid-cols-4">
+            <div
+              class="max-w-[600px] grid gap-4 sm:pt-6 lg:pt-12 md:col-span-3"
+            >
+              <p>
+                Dr. Gould’s mission is to help patients maximize themselves -
+                their quality of life, cognitive health, and engagement with
+                others - within their own individual contexts. She helps
+                patients and their families adjust to their new normal, even if
+                it comes with some limitations.
+              </p>
+              <p>
+                A clinical appointment can range from three to six hours, and is
+                catered toward the patient’s age, unique health history, the
+                referral question or cognitive concern, and goals. An evaluation
+                to set a treatment plan for cognitive rehab 2-months post brain
+                injury, for example, would be shorter than a comprehensive
+                evaluation 12-months after injury to compare and establish a new
+                functional baseline.
+              </p>
+              <p>
+                During the appointment, Dr. Gould will ask questions about
+                medical history, thinking skills, and mood. She will then
+                administer non-invasive tests to measure different cognitive
+                abilities (e.g. attention, memory, language, thinking speed)
+                based on the patient and referring provider’s questions.
+              </p>
             </div>
-            <div class="max-w-[600px] grid gap-4 pt-8 lg:pt-12">
-              <p>
-                <span class="font-bold font-accessbold">
-                  Neuropsychological Independent Medical Evaluations
-                </span>{" "}
-                (IMEs) provide an objective assessment of an individual’s cognitive
-                abilities after an injury or event, and determine whether there is
-                emotional or cognitive impact that can be tied back to the event.
+            <div
+              class="hidden clinic-chevron md:block h-52 bg-sage justify-self-end self-center rotate-180"
+            >
+              <span class="visually-hidden">
+                Curved chevron (arrow), sage color, serving as a decorative
+                element, pointing at the text content paragraph.
+              </span>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-4">
+            <div
+              class="hidden clinic-chevron md:block h-52 bg-coral justify-self-start self-center"
+            >
+              <span class="visually-hidden">
+                Curved chevron (arrow), sage color, serving as a decorative
+                element, pointing at the quote from Dr. Gould.
+              </span>
+            </div>
+            <div
+              class="max-w-[600px] grid gap-4 pt-4 sm:pt-8 lg:pt-12 md:col-span-3"
+            >
+              <p class="mb-4 sm:mb-8">
+                Dr. Gould created Mind Matters Memphis to be able to spend more
+                time with patients than a traditional physician might be able
+                to, as they’re often pressed for time. Her practice gives
+                patients a space to feel heard and have their questions
+                answered. She focuses on the more social and mental health sides
+                of neurocognitive conditions, which can be overlooked or fall
+                through the cracks in a regular office setting.
               </p>
-              <p>
-                Forensic IMEs include a review of the individual’s medical
-                history, tests and assessments to evaluate cognitive and
-                behavioral function, and a written report to answer a specific
-                question posed by the case manager. The results of this IME can
-                be used to inform treatment decisions, determine eligibility for
-                disability benefits, or provide guidance for legal proceedings.
-              </p>
-              <p class="italic font-accessitalic">
+              <div
+                class="border-4 rounded-md mx-4 md:rounded-none md:border-8 md:mx-12 max-w-3xl z-20 mb-4 sm:mb-10 border-inlet quote-frame-inlet italic font-accessitalic p-4"
+              >
                 <i>
-                  Dr. Gould has experience as a plaintiff's and defense expert
-                  witness. Forensic IMEs from Mind Matters Memphis have a rate
-                  of $350/hour, and typically require 10-15 hours at a minimum.
+                  “I’m here to help make my patients’ lives easier by providing
+                  answers, helping them problem-solve, and giving them (and
+                  their families) solutions during times of distress.”
                 </i>
+                <p class="font-accessdisplay text-end pr-8">- Dr. Gould</p>
+              </div>
+              <p>
+                Mind Matters Memphis is proud to provide Feedback Sessions after
+                the assessment, in addition to a written report. These Feedback
+                Sessions involve a thorough explanation of the patient’s results
+                and a plan of action with next steps the patient can take on
+                their own, to help maximize life within the context of their
+                results.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="relative min-h-48 bg-dust overflow-hidden">
+        <div
+          class="absolute top-0 right-0 border-t-[96px] border-t-dust border-b-0 border-r-100w border-r-inlet z-10"
+        >
+        </div>
+        <div
+          class="absolute bottom-0 left-0 border-b-[96px] border-sage border-t-0 border-l-100w border-l-inlet z-10"
+        >
+        </div>
+      </div>
+      <div class="bg-dust relative overflow-hidden">
+        <div class="absolute bg-sage w-0 h-0 top-0 left-0 z-0">
+          <div class="w-dvw bg-sage h-24"></div>
           <div
-            class="forensic-chevron rotate-180 hidden bg-sage h-56 lg:block lg:row-start-1 lg:col-start-3 self-center justify-self-center"
+            class="bg-sage z-0 border-l-[50dvw] border-dust border-r-[50cqw] border-t-[5rem] md:border-t-[8rem] lg:border-t-[calc(25cqh-6rem)] border-t-sage"
           >
             <span class="visually-hidden">
-              A decorative chevron (arrow) element, sage green color, pointing
-              to the Independent Medical Evaluations text content.
+              A decorative triangle element, sage green color, pointing downward
+              at the reasons to see a neuropsychologist section.
             </span>
           </div>
-          <div
-            id="testamentary-evals"
-            class="lg:col-start-2 lg:col-span-2 lg:justify-self-start"
+        </div>
+        <div
+          class="relative h-44 sm:h-64 lg:h-64 w-dvw flex justify-center items-start"
+        >
+          <h2
+            class="text-midnight uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-6 font-accessdisplay font-bold text-center underline decoration-line decoration-midnight decoration-4 z-10"
           >
-            <div class="forensic-parallelogram-wrap max-w-[600px]">
-              <div
-                class="forensic-parallelogram bg-inlet flex justify-center items-center w-[100%]"
-              >
-                <span class="visually-hidden">
-                  A decorative parallelogram element, big sky blue color,
-                  framing the header (h2) content.
-                </span>
-                <div class="drop-shadow-lg h-inherit w-[80%]">
-                  <h2
-                    class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl"
-                  >
-                    <span class="text-center"> Testamentary Evaluations </span>
-                  </h2>
+            Reasons to See a Neuropsychologist
+          </h2>
+        </div>
+      </div>
+      <div class="bg-dust grid justify-center p-8">
+        <div class="grid md:grid-cols-4">
+          <div
+            class="hidden clinic-chevron md:hidden h-52 bg-coral justify-self-start self-center"
+          >
+            <span class="visually-hidden">
+              Curved chevron (arrow), sage color, serving as a decorative
+              element, pointing at the quote from Dr. Gould.
+            </span>
+          </div>
+          <div class="max-w-[600px] grid gap-4 md:col-span-4">
+            <p class="sm:mb-8">
+              Neuropsychological evaluations assess cognitive strengths and
+              weaknesses, as well as changes in cognition or behavior over time.
+              A neuropsychologist can help determine whether these changes are
+              due to disease or injury in the brain, and provide resources for
+              patients and their families.
+            </p>
+            <ul
+              class="border-4 rounded-md sm:mx-4 md:rounded-none md:border-8 max-w-3xl z-20 sm:mb-10 border-inlet quote-frame-inlet pr-2 py-4 sm:p-4 sm:py-8 grid gap-4"
+            >
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    After a stroke or traumatic brain injury, to assess initial
+                    cognitive impact and chart recovery over time
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="max-w-[600px] grid gap-4 pt-8 lg:pt-12">
-              <p>
-                <span class="font-bold font-accessbold"
-                  >Testamentary Evaluations</span
-                >{" "}
-                are for individuals, families, and financial planners seeking to
-                protect their wealth. These cognitive evaluations establish whether
-                an individual is of sound mind and has the cognitive capacity to
-                make these important decisions. As such, they can help safeguard
-                against risky decisions or support the soundness of an individual’s
-                decisions, whatever the case may be.
-              </p>
-              <p>
-                If your client or loved one’s cognition is changing, it may be
-                time to have an independent cognitive evaluation.
-              </p>
-              <div
-                class="cognitive-parallelogram-mini bg-inlet w-40 m-4 justify-self-center mt-16 sm:p-8 sm:w-64 md:p-4 md:mt-12"
-              >
-                <span class="visually-hidden">
-                  Small blue parallelogram, serving to delineate items.
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="forensic-chevron hidden bg-inlet h-56 lg:block lg:row-start-2 lg:col-start-1 self-center justify-self-center"
-          >
-            <span class="visually-hidden">
-              A decorative chevron (arrow) element, big sky blue color, pointing
-              to the Testamentary Evaluations text content.
-            </span>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    For diagnosis or help managing symptoms of dementias,
+                    including Alzheimer’s Disease
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    Pre-surgical assessments for previously diagnosed
+                    conditions, such as epilepsy or brain tumor
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    To support medical epilepsy treatment and assess cognitive
+                    impact of medications
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Dr. Gould advocates for tracking cognition over time in epilepsy
+              patients, both in newly diagnosed individuals and long-time
+              sufferers. By doing so, she can help epileptologists pinpoint
+              which seizure location is having the most impact on the brain, and
+              whether there is cumulative impact. This can inform any surgical
+              approach, if deemed necessary.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="p-8 pt-4 md:pt-0">
-      <div class="min-h-40 flex flex-col items-center justify-evenly">
+    <div
+      class="bg-sage min-h-64 flex flex-col items-center justify-evenly relative sm:mt-12 px-8 py-12 shadow-lg"
+    >
+      <div
+        class="hidden lg:block absolute left-0 h-[30cqw] w-[15cqw] rounded-br-full rounded-tr-full bg-inlet border-r-4 border-b-8 border-t-8 border-inlet z-0"
+      >
+        <span class="visually-hidden">
+          A decorative semicircle element, big sky blue color, sitting at the
+          upper left corner of the Meet Dr. Gould section.
+        </span>
+      </div>
+      <div
+        class="hidden lg:block absolute left-0 h-[20cqw] w-[10cqw] rounded-br-full rounded-tr-full bg-sand border-r-6 border-coral z-0"
+      >
+        <span class="visually-hidden">
+          A decorative semicircle element, sand and coral colors, sitting inside
+          the larger blue semicircle in the upper left corner.
+        </span>
+      </div>
+      <p class="max-w-prose pb-6">
+        To request an appointment with Dr. Gould, please visit our contact page:
+      </p>
+      <a
+        href="/astrosite/contact"
+        class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 px-6 m-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:left-[17%] hover:before:w-[66%] sm:hover:before:left-[22%] sm:hover:before:w-[56%] active:left-[1px] active:top-[2px] active:shadow-none"
+      >
+        Contact Us
+      </a>
+    </div>
+    <div class="bg-dust flex justify-center p-4 pb-8 sm:p-8">
+      <div
+        class="text-midnight bg-dust p-4 grid gap-4 justify-center relative rounded-bl-xl text-xl max-w-[500px] md:gap-8 md:max-w-[800px]"
+      >
+        <h2
+          class="text-4xl sm:text-6xl md:text-7xl text-center font-accessdisplay font-bold uppercase"
+        >
+          Referral Information
+        </h2>
         <p>
-          To learn more about our approach to Cognitive Aging Evaluations, visit
-          the Healthy Cognitive Aging page.
+          We welcome referrals from medical professionals including
+          Neurologists, Epileptologists, Speech Therapists, Physical Medicine &
+          Rehab professionals, and Primary Care or Emergency Medicine providers
+          (especially in the case of stroke or concussion).
+        </p>
+        <p>
+          Please complete the referral form and fax it - along with patient
+          records - to 901-766-7550.
         </p>
         <a
-          href="/astrosite/cognitive-aging"
-          class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 px-6 m-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:left-[13%] hover:before:w-[74%] sm:hover:before:left-[18%] sm:hover:before:w-[64%] active:left-[1px] active:top-[2px] active:shadow-none"
+          href={referralForm}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 sm:m-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] hover:before:left-[7%] hover:before:w-[86%] sm:hover:before:left-[13%] sm:hover:before:w-[74%] active:left-[1px] active:top-[2px] active:shadow-none"
         >
-          Cognitive Aging
+          Download Referral Form
         </a>
       </div>
     </div>
