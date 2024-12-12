@@ -32,11 +32,35 @@ const pageInfo = {
           <div class="text-midnight p-4 pb-12 max-w-[624px]">
             <p>
               Mind Matters Memphis provides clinical neuropsychological
-              assessments for patients with stroke, traumatic brain injury
-              (TBI), epilepsy, and more.
+              assessments for patients who have experienced a neurologic disease
+              or insult via stroke/neurovascular, traumatic brain injury (TBI),
+              epilepsy, Parkinson's disease, Multiple Sclerosis, or brain tumor.
             </p>
             <p class="pt-8 pb-4">Clinical Assessments are used to:</p>
             <ul class="grid gap-2 pl-4 sm:pl-8">
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>Aid in the diagnosis of neurologic disorders</p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>
+                    Document the degree of cognitive damage due to a neurologic
+                    injury
+                  </p>
+                </div>
+              </li>
               <li>
                 <div class="flex gap-2 items-center">
                   <img
@@ -54,7 +78,11 @@ const pageInfo = {
                     alt=">"
                     class="text-coral h-10 w-10 shrink-0"
                   />
-                  <p>Establish a new functional baseline</p>
+                  <p>
+                    Establish a new functional baseline and inform decision
+                    making (i.e., driving, financial management, living
+                    situation)
+                  </p>
                 </div>
               </li>
               <li>
@@ -65,8 +93,8 @@ const pageInfo = {
                     class="text-coral h-10 w-10 shrink-0"
                   />
                   <p>
-                    Track cognition over time, especially after surgery or
-                    injury
+                    Disease management and track cognition over time, especially
+                    after a new neurologic diagnosis, surgery, or injury
                   </p>
                 </div>
               </li>
@@ -78,6 +106,16 @@ const pageInfo = {
                     class="text-coral h-10 w-10 shrink-0"
                   />
                   <p>Evaluate the cognitive side effects of medications</p>
+                </div>
+              </li>
+              <li>
+                <div class="flex gap-2 items-center">
+                  <img
+                    src={chevron.src}
+                    alt=">"
+                    class="text-coral h-10 w-10 shrink-0"
+                  />
+                  <p>Provide family/caregiver support</p>
                 </div>
               </li>
             </ul>
@@ -131,10 +169,11 @@ const pageInfo = {
             >
               <p>
                 Dr. Gould’s mission is to help patients maximize themselves -
-                their quality of life, cognitive health, and engagement with
-                others - within their own individual contexts. She helps
-                patients and their families adjust to their new normal, even if
-                it comes with some limitations.
+                their quality of life, cognitive health, emotional health, and
+                engagement with others - within their own individual contexts.
+                She helps patients and their families adjust to their new normal
+                after a neurologic event, even if it comes with some
+                limitations.
               </p>
               <p>
                 A clinical appointment can range from three to six hours, and is
@@ -149,8 +188,9 @@ const pageInfo = {
                 During the appointment, Dr. Gould will ask questions about
                 medical history, thinking skills, and mood. She will then
                 administer non-invasive tests to measure different cognitive
-                abilities (e.g. attention, memory, language, thinking speed)
-                based on the patient and referring provider’s questions.
+                abilities (e.g. attention, memory, language/speech, visuospatial
+                abilities, processing speed, executive functioning) based on the
+                questions and concerns of the patient and referring provider.
               </p>
             </div>
             <div
@@ -175,13 +215,12 @@ const pageInfo = {
               class="max-w-[600px] grid gap-4 pt-4 sm:pt-8 lg:pt-12 md:col-span-3"
             >
               <p class="mb-4 sm:mb-8">
-                Dr. Gould created Mind Matters Memphis to be able to spend more
-                time with patients than a traditional physician might be able
-                to, as they’re often pressed for time. Her practice gives
-                patients a space to feel heard and have their questions
-                answered. She focuses on the more social and mental health sides
-                of neurocognitive conditions, which can be overlooked or fall
-                through the cracks in a regular office setting.
+                Dr. Gould created Mind Matters Memphis to offer patients a more
+                personalized healthcare experience. Her practice gives patients
+                a space to feel heard and have their questions thoroughly
+                answered. She prides herself on the more social and mental
+                health aspects of of neurocognitive conditions, which can be
+                overlooked in conventional medical settings.
               </p>
               <div
                 class="border-4 rounded-md mx-4 md:rounded-none md:border-8 md:mx-12 max-w-3xl z-20 mb-4 sm:mb-10 border-inlet quote-frame-inlet italic font-accessitalic p-4"
@@ -249,11 +288,16 @@ const pageInfo = {
           </div>
           <div class="max-w-[600px] grid gap-4 md:col-span-4">
             <p class="sm:mb-8">
-              Neuropsychological evaluations assess cognitive strengths and
-              weaknesses, as well as changes in cognition or behavior over time.
+              Neuropsychological evaluations use non-invasive tests to assess
+              cognitive abilities, including attention, processing speed,
+              language/speech, visuospatial perception, memory, and executive
+              functioning, as well as changes in mood or personality. The
+              assessment will reveal the person’s cognitive strengths and
+              weaknesses to document changes in cognition or behavior over time.
               A neuropsychologist can help determine whether these changes are
-              due to disease or injury in the brain, and provide resources for
-              patients and their families.
+              due to disease or injury in the brain, a mental health condition,
+              or a non-clinical etiology and provide resources for patients and
+              their families.
             </p>
             <ul
               class="border-4 rounded-md sm:mx-4 md:rounded-none md:border-8 max-w-3xl z-20 sm:mb-10 border-inlet quote-frame-inlet pr-2 py-4 sm:p-4 sm:py-8 grid gap-4"
@@ -279,8 +323,8 @@ const pageInfo = {
                     class="text-coral h-10 w-10 shrink-0"
                   />
                   <p>
-                    For diagnosis or help managing symptoms of dementias,
-                    including Alzheimer’s Disease
+                    For diagnosis or help managing symptoms of neurologic
+                    disease, such as Parkinson's disease or Multiple Sclerosis
                   </p>
                 </div>
               </li>
@@ -313,11 +357,11 @@ const pageInfo = {
             </ul>
             <p>
               Dr. Gould advocates for tracking cognition over time in epilepsy
-              patients, both in newly diagnosed individuals and long-time
-              sufferers. By doing so, she can help epileptologists pinpoint
-              which seizure location is having the most impact on the brain, and
-              whether there is cumulative impact. This can inform any surgical
-              approach, if deemed necessary.
+              patients, both in newly diagnosed individuals and long-term
+              patients. Serial neuropsychological assessments can help
+              epileptologists determine seizure onset, which can inform surgical
+              approach if deemed necessary. As well as determine whether there
+              has been a cumulative impact of uncontrolled seizures.
             </p>
           </div>
         </div>

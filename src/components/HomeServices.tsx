@@ -45,7 +45,10 @@ const ServiceBlock = ({ service }: Props) => {
               key={index}
               className={`text-lg grid grid-cols-12 items-start list-inside`}
             >
-              <img src={service.arrowSrc} className={"h-8 w-8 justify-self-end text-" + service.color} />
+              <img
+                src={service.arrowSrc}
+                className={"h-8 w-8 justify-self-end text-" + service.color}
+              />
               <span className="text-wrap col-span-10">{point}</span>
             </li>
           ))}
@@ -70,13 +73,16 @@ export const HomeServices = () => {
   const services = [
     {
       title: "Neuropsychological Assessments",
-      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
+      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neuro-vasculr accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
       url: "/clinical-neuropsychology",
       points: [
+        "Aid in the diagnosis of neurologic disorders",
+        "Document the degree of cognitive and emotional/personality change due to a neurologic injury",
         "Set a treatment plan for cognitive rehabilitation",
-        "Establish a new functional baseline",
-        "Track cognition over time, especially after surgery or injury",
+        "Establish a new functional baseline and inform decision making (i.e., driving, financial management, living situation)",
+        "Track cognition over time for disease management, especially after a new neurologic diagnosis or surgery",
         "Evaluate the cognitive side effects of medications",
+        "Provide family/caregiver support and education",
       ],
       linkText: "Clinical Neuropsychology",
       // style: "xl:justify-self-end xl:mr-24 mt-10 border-inlet from-inlet/75",
@@ -87,7 +93,7 @@ export const HomeServices = () => {
     },
     {
       title: "Forensic Evaluations",
-      text: "Objective, independent evaluations for legal matters involving cognitive health. Services include:",
+      text: "Objective, independent evaluations for civil legal matters pertaining to cognitive dysfunction. Services include:",
       url: "/forensic-evaluations#top",
       points: [
         "Neuropsychological IMEs",

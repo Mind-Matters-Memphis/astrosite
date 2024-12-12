@@ -1,26 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CTA from "../components/CTA.astro";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
 const pageInfo = {
   title: "Forensic Neuropsychology IMEs - Mind Matters Memphis",
-  description: "Objective, independent neuropsychological evaluations for worker’s comp, disability, personal injury cases, and more."
-}
+  description:
+    "Objective, independent neuropsychological evaluations for worker’s comp, disability, personal injury cases, and more.",
+};
 ---
 
-
-<Layout page={pageInfo} >
+<Layout page={pageInfo}>
   <div class="bg-dust text-midnight text-xl">
     <div class="bg-sage">
       <div class="headline-top bg-inlet">
-        <h1 class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-dust text-center pt-12 pb-24">
+        <h1
+          class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-dust text-center pt-12 pb-24"
+        >
           Forensic Evaluations
         </h1>
       </div>
       <div class="headline-bottom bg-midnight p-4">
-        <h1 class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-sand text-center pt-16 pb-8">
+        <h1
+          class="text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl font-accessdisplay font-bold text-sand text-center pt-16 pb-8"
+        >
           Objective, Independent Neuropsychological Evaluations
         </h1>
         <div class="grid justify-items-center">
@@ -36,12 +39,15 @@ const pageInfo = {
                   >
                     Independent Medical Evaluations
                   </a>
-                  {` (IME), including for workers’ compensation, disability, and
-                personal injury cases.`}
+                  {
+                    ` (IME), for workers’ compensation, personal injury cases, and disability.`
+                  }
                 </p>
                 <ul class="list-[circle] pl-8 sm:pl-16">
                   <li>Neuropsychological IMEs</li>
                   <li>Psychological-only IMEs</li>
+                  <li>Case review and consultation</li>
+                  <li>Peer review</li>
                 </ul>
               </li>
               <li>
@@ -53,9 +59,17 @@ const pageInfo = {
                   >
                     Testamentary Evaluations
                   </a>
-                  , i.e. to determine whether a person has the cognitive
-                  capacity to put together (or make changes to) their will.
+                  , to determine whether a person has the cognitive capacity to create
+                  or change their will.
                 </p>
+                <ul class="list-[circle] pl-8 sm:pl-16">
+                  <li>
+                    This evaluation will assess a person's ability to understand
+                    the nature of a will, the extent of their property, who
+                    their beneficiaries are, and how they wish to distribute
+                    their assets.
+                  </li>
+                </ul>
               </li>
             </ul>
             <div class="pt-8">
@@ -88,16 +102,22 @@ const pageInfo = {
         </div>
       </div>
       <div class="grid justify-center bg-dust">
-        <div class="bg-dust p-8 grid lg:grid-cols-3 lg:grid-rows-2 max-w-[1000px] gap-8 lg:gap-24 lg:pt-16 lg:pb-0">
+        <div
+          class="bg-dust p-8 grid lg:grid-cols-3 lg:grid-rows-2 max-w-[1000px] gap-8 lg:gap-24 lg:pt-16 lg:pb-0"
+        >
           <div id="medical-evals" class="lg:col-span-2">
             <div class="forensic-parallelogram-wrap max-w-[600px]">
-              <div class="forensic-parallelogram bg-sage flex justify-center items-center w-[100%]">
+              <div
+                class="forensic-parallelogram bg-sage flex justify-center items-center w-[100%]"
+              >
                 <span class="visually-hidden">
-                  A decorative parallelogram element, sage green color,
-                  framing the header (h2) content.
+                  A decorative parallelogram element, sage green color, framing
+                  the header (h2) content.
                 </span>
                 <div class="drop-shadow-lg h-inherit w-[80%]">
-                  <h2 class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl">
+                  <h2
+                    class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl"
+                  >
                     <span class="text-center">
                       Independent Medical Evaluations
                     </span>
@@ -110,31 +130,30 @@ const pageInfo = {
                 <span class="font-bold font-accessbold">
                   Neuropsychological Independent Medical Evaluations
                 </span>{" "}
-                (IMEs) provide an objective assessment of an individual’s
-                cognitive abilities after an injury or event, and determine
-                whether there is emotional or cognitive impact that can be
-                tied back to the event.
+                (IMEs) provide an objective assessment of the degree of cognitive
+                and emotional decline after an injury or event. abilities after an
+                injury or event.
               </p>
               <p>
                 Forensic IMEs include a review of the individual’s medical
                 history, tests and assessments to evaluate cognitive and
                 behavioral function, and a written report to answer a specific
-                question posed by the case manager. The results of this IME
-                can be used to inform treatment decisions, determine
-                eligibility for disability benefits, or provide guidance for
-                legal proceedings.
+                question posed by the case manager. The results of this IME can
+                be used to inform treatment decisions, determine eligibility for
+                disability benefits, or provide guidance for legal proceedings.
               </p>
               <p class="italic font-accessitalic">
                 <i>
                   Dr. Gould has experience as a plaintiff's and defense expert
                   witness. Forensic IMEs from Mind Matters Memphis have a rate
-                  of $350/hour, and typically require 10-15 hours at a
-                  minimum.
+                  of $350/hour, and typically require 10-15 hours at a minimum.
                 </i>
               </p>
             </div>
           </div>
-          <div class="forensic-chevron rotate-180 hidden bg-sage h-56 lg:block lg:row-start-1 lg:col-start-3 self-center justify-self-center">
+          <div
+            class="forensic-chevron rotate-180 hidden bg-sage h-56 lg:block lg:row-start-1 lg:col-start-3 self-center justify-self-center"
+          >
             <span class="visually-hidden">
               A decorative chevron (arrow) element, sage green color, pointing
               to the Independent Medical Evaluations text content.
@@ -145,46 +164,52 @@ const pageInfo = {
             class="lg:col-start-2 lg:col-span-2 lg:justify-self-start"
           >
             <div class="forensic-parallelogram-wrap max-w-[600px]">
-              <div class="forensic-parallelogram bg-inlet flex justify-center items-center w-[100%]">
+              <div
+                class="forensic-parallelogram bg-inlet flex justify-center items-center w-[100%]"
+              >
                 <span class="visually-hidden">
                   A decorative parallelogram element, big sky blue color,
                   framing the header (h2) content.
                 </span>
                 <div class="drop-shadow-lg h-inherit w-[80%]">
-                  <h2 class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl">
-                    <span class="text-center">
-                      Testamentary Evaluations
-                    </span>
+                  <h2
+                    class="forensic-parallelogram-lite bg-dust text-midnight font-accessdisplay flex justify-center items-center px-16 text-2xl sm:text-5xl"
+                  >
+                    <span class="text-center"> Testamentary Evaluations </span>
                   </h2>
                 </div>
               </div>
             </div>
             <div class="max-w-[600px] grid gap-4 pt-8 lg:pt-12">
               <p>
-                <span class="font-bold font-accessbold">Testamentary Evaluations</span>{" "}
-                are for individuals, families, and financial planners seeking
-                to protect their wealth. These cognitive evaluations establish
-                whether an individual is of sound mind and has the cognitive
-                capacity to make these important decisions. As such, they can
-                help safeguard against risky decisions or support the
-                soundness of an individual’s decisions, whatever the case may
-                be.
+                <span class="font-bold font-accessbold"
+                  >Testamentary Evaluations</span
+                >{" "}
+                are for individuals, families, financial planners, and attorneys
+                seeking to protect their wealth or the wealth of their client. These
+                cognitive evaluations establish whether an individual has the cognitive
+                capacity to create or change a will which helps safeguard against
+                risky decisions or support the soundness of an individual’s decisions.
               </p>
               <p>
                 If your client or loved one’s cognition is changing, it may be
                 time to have an independent cognitive evaluation.
               </p>
-              <div class="cognitive-parallelogram-mini bg-inlet w-40 m-4 justify-self-center mt-16 sm:p-8 sm:w-64 md:p-4 md:mt-12">
+              <div
+                class="cognitive-parallelogram-mini bg-inlet w-40 m-4 justify-self-center mt-16 sm:p-8 sm:w-64 md:p-4 md:mt-12"
+              >
                 <span class="visually-hidden">
                   Small blue parallelogram, serving to delineate items.
                 </span>
               </div>
             </div>
           </div>
-          <div class="forensic-chevron hidden bg-inlet h-56 lg:block lg:row-start-2 lg:col-start-1 self-center justify-self-center">
+          <div
+            class="forensic-chevron hidden bg-inlet h-56 lg:block lg:row-start-2 lg:col-start-1 self-center justify-self-center"
+          >
             <span class="visually-hidden">
-              A decorative chevron (arrow) element, big sky blue color,
-              pointing to the Testamentary Evaluations text content.
+              A decorative chevron (arrow) element, big sky blue color, pointing
+              to the Testamentary Evaluations text content.
             </span>
           </div>
         </div>
@@ -193,7 +218,8 @@ const pageInfo = {
     <div class="p-8 pt-4 md:pt-0">
       <div class="min-h-40 flex flex-col items-center justify-evenly">
         <p>
-          To learn more about our approach to Cognitive Aging Evaluations, visit the Healthy Cognitive Aging page.
+          To learn more about our approach to Cognitive Aging Evaluations, visit
+          the Healthy Cognitive Aging page.
         </p>
         <a
           href="/astrosite/cognitive-aging"
