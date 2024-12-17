@@ -5,6 +5,7 @@ import waiting from "../assets/imgs/WomanAtTable.jpg";
 import { HomeServices } from "../components/HomeServices";
 import portrait from "../assets/imgs/HeadshotSm.jpeg";
 import referralForm from "../assets/forms/referral-form.pdf";
+import chevron from "../assets/imgs/icons/chevron-right.svg";
 import "../styles/global.css";
 
 const pageInfo = {
@@ -68,17 +69,42 @@ const pageInfo = {
       </h2>
       <p class="text-midnight font-accessbody">
         Mind Matters Memphis provides clinical and forensic neuropsychological
-        evaluations for adult patients with stroke/neuro-vascular accidents,
+        evaluations for adult patients with stroke/neurovascular accidents,
         traumatic brain injury (TBI), epilepsy, or other neurocognitive
         concerns. We partner with patients to optimize their cognitive wellness.
       </p>
       <p class="text-midnight font-accessbody">
         Patients can expect a comprehensive evaluation of their cognitive and
-        emotional concerns, resulting in a thorough list of recommendations that
-        can be implemented by the referral source and separate recommendations
-        the patient can implement on their own, which may include being
-        connected to community organizations and resources.
+        emotional concerns. Dr. Gould will follow-up with a twofold response:
       </p>
+      <ul class="grid gap-2 pl-4 sm:pl-8 text-midnight font-accessbody">
+        <li>
+          <div class="grid grid-cols-12 items-start list-inside">
+            <img
+              src={chevron.src}
+              alt=">"
+              class="text-coral h-10 w-10 justify-self-end"
+            />
+            <p class="col-span-10 pt-[0.35rem]">
+              Recommendations to be implemented by the referral source
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="grid grid-cols-12 items-start list-inside">
+            <img
+              src={chevron.src}
+              alt=">"
+              class="text-coral h-10 w-10 justify-self-end"
+            />
+            <p class="col-span-10 pt-[0.35rem]">
+              Separate recommendations the patient can implement on their own,
+              including optional connections to community organizations and
+              resources
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="relative min-h-48 bg-dust overflow-hidden">
@@ -149,10 +175,10 @@ const pageInfo = {
           </p>
           <p class="text-2xl italic font-accessitalic">
             <i>
-              “As an independent boutique clinic, I’m able to offer patients
-              more time and a greater level of attention and time to the patient
-              to ensure they feel heard and receive a plan of care that is
-              specific to their needs, lifestyle, and goals.”
+              “As an independent clinic, I’m able to offer patients more time
+              and a greater level of attention and time to the patient to ensure
+              they feel heard and receive a plan of care that is specific to
+              their needs, lifestyle, and goals.”
             </i>
           </p>
         </div>

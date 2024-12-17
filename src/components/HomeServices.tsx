@@ -74,16 +74,24 @@ export const HomeServices = () => {
   const services = [
     {
       title: "Neuropsychological Assessments",
-      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neuro-vascular accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
+      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neurovascular accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
       url: "/astrosite/clinical-neuropsychology",
       points: [
         "Aid in the diagnosis of neurologic disorders",
         "Document the degree of cognitive and emotional/personality change due to a neurologic injury",
         "Set a treatment plan for cognitive rehabilitation",
-        "Establish a new functional baseline and inform decision making (i.e., driving, financial management, living situation)",
-        "Track cognition over time for disease management, especially after a new neurologic diagnosis or surgery",
+        "Establish a new functional baseline and inform important decision making",
+        "Track cognition over time for disease management",
         "Evaluate the cognitive side effects of medications",
-        "Provide family/caregiver support and education",
+        "Provide family/caregiver support",
+
+        // "Aid in the diagnosis of neurologic disorders",
+        // "Document the degree of cognitive and emotional/personality change due to a neurologic injury",
+        // "Set a treatment plan for cognitive rehabilitation",
+        // "Establish a new functional baseline and inform decision making (i.e., driving, financial management, living situation)",
+        // "Track cognition over time for disease management, especially after a new neurologic diagnosis or surgery",
+        // "Evaluate the cognitive side effects of medications",
+        // "Provide family/caregiver support and education",
       ],
       linkText: "Clinical Neuropsychology",
       // style: "xl:justify-self-end xl:mr-24 mt-10 border-inlet from-inlet/75",
