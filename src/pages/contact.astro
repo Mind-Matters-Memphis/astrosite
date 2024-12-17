@@ -10,24 +10,31 @@ import "../styles/global.css";
 
 const pageInfo = {
   title: "Contact Us - Mind Matters Memphis",
-  description: "Contact information and driving directions for our boutique neuropsychology office in Memphis, TN."
-}
+  description:
+    "Contact information and driving directions for our boutique neuropsychology office in Memphis, TN.",
+};
 ---
 
-<Layout page={pageInfo} >
+<Layout page={pageInfo}>
   <div class="text-accessbody">
     <div class="bg-dust text-midnight text-xl pt-8 sm:p-8 flex flex-col gap-8">
-      <div class="contact-parallelogram bg-sand h-40 sm:h-50 md:h-64 flex flex-col justify-center justify-self-center mx-4 sm:mx-12 shadow-2xl">
+      <div
+        class="contact-parallelogram bg-sand h-40 sm:h-50 md:h-64 flex flex-col justify-center justify-self-center mx-4 sm:mx-12 shadow-2xl"
+      >
         <span class="visually-hidden">
           A decorative parallelogram element, sand color, framing the header
           content.
         </span>
-        <h1 class="text-midnight text-5xl sm:text-7xl xl:text-8xl font-accessdisplay font-bold uppercase text-center flex flex-col justify-center items-center">
+        <h1
+          class="text-midnight text-5xl sm:text-7xl xl:text-8xl font-accessdisplay font-bold uppercase text-center flex flex-col justify-center items-center"
+        >
           Contact
         </h1>
       </div>
       <div class="md:grid md:grid-cols-9">
-        <div class="hidden md:col-span-2 md:flex justify-end items-center mr-[12%]">
+        <div
+          class="hidden md:col-span-2 md:flex justify-end items-center mr-[12%]"
+        >
           <div class="contact-chevron bg-inlet h-0 md:h-44 lg:h-56">
             <span class="visually-hidden">
               A decorative chevron element, big sky blue color, pointing right
@@ -47,19 +54,14 @@ const pageInfo = {
                 <img src={chevron.src} alt=">" class="text-coral h-8 w-8" />
                 <h2>Phone:</h2>
               </div>
-              <a href="tel:+19017667500" class="underline">
-                901-766-7500
-              </a>
+              <a href="tel:+19017667500" class="underline"> 901-766-7500 </a>
             </div>
             <div class="flex flex-wrap items-center gap-2 p-2 sm:w-fit">
               <div class="pl-2 flex gap-2 items-center">
                 <img src={chevron.src} alt=">" class="text-coral h-8 w-8" />
                 <h2>Email:</h2>
               </div>
-              <a
-                href="mailto:info@mindmattersmemphis.com"
-                class="underline"
-              >
+              <a href="mailto:info@mindmattersmemphis.com" class="underline">
                 info@mindmattersmemphis.com
               </a>
             </div>
@@ -68,9 +70,15 @@ const pageInfo = {
       </div>
     </div>
     <div class="bg-dust grid md:grid-cols-4 xl:grid-cols-6">
-      <div class="grid justify-center md:col-start-1 md:col-span-3 xl:col-start-2">
-        <div class="text-midnight bg-dust grid gap-4 justify-center relative text-xl py-8 sm:p-8 md:gap-8 md:max-w-[700px] md:py-16">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl text-center font-accessdisplay font-bold uppercase">
+      <div
+        class="grid justify-center md:col-start-1 md:col-span-3 xl:col-start-2"
+      >
+        <div
+          class="text-midnight bg-dust grid gap-4 justify-center relative text-xl py-8 sm:p-8 md:gap-8 md:max-w-[700px] md:py-16"
+        >
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl text-center font-accessdisplay font-bold uppercase"
+          >
             Referrals
           </h2>
           <p class="px-8">
@@ -82,49 +90,56 @@ const pageInfo = {
             Please complete the referral form and fax it - along with patient
             records - to 901-766-7550.
           </p>
-          <button class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] sm:hover:before:left-[13%] sm:hover:before:w-[74%] active:left-[1px] active:top-[2px] active:shadow-none">
+          <button
+            class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] sm:hover:before:left-[13%] sm:hover:before:w-[74%] active:left-[1px] active:top-[2px] active:shadow-none"
+          >
             Download Referral Form
           </button>
           <p class="hidden sm:block px-4 text-center">
             For questions about referrals, please email{" "}
-            <a
-              href="mailto:referrals@mindmattersmemphis.com"
-              class="underline"
-            >
+            <a href="mailto:referrals@mindmattersmemphis.com" class="underline">
               referrals@mindmattersmemphis.com
             </a>
           </p>
           <div class="p-1 w-fit mx-auto sm:hidden text-center">
             <p>Questions about referrals?</p>
             <p>Please send us an email:</p>
-            <a
-              href="mailto:referrals@mindmattersmemphis.com"
-              class="underline"
-            >
+            <a href="mailto:referrals@mindmattersmemphis.com" class="underline">
               referrals@mindmattersmemphis.com
             </a>
           </div>
         </div>
       </div>
-      <div class="hidden md:col-start-4 md:col-span-1 md:flex justify-start items-center xl:col-start-5">
-        <div class="contact-chevron rotate-180 bg-sage h-0 md:h-56 lg:h-72 -mt-32">
+      <div
+        class="hidden md:col-start-4 md:col-span-1 md:flex justify-start items-center xl:col-start-5"
+      >
+        <div
+          class="contact-chevron rotate-180 bg-sage h-0 md:h-56 lg:h-72 -mt-32"
+        >
           <span class="visually-hidden">
-            A decorative chevron element, sage green color, pointing left to
-            the referral information.
+            A decorative chevron element, sage green color, pointing left to the
+            referral information.
           </span>
         </div>
       </div>
     </div>
     <div class="bg-dust text-xl text-midnight py-8">
-      <div class="contact-ribbon font-bold font-accessbold text-4xl text-dust bg-inlet flex p-4 pl-0 sm:pl-4 justify-center w-[95%] md:w-[90%]">
+      <div
+        class="contact-ribbon font-bold font-accessbold text-4xl text-dust bg-inlet flex p-4 pl-0 sm:pl-4 justify-center w-[95%] md:w-[90%]"
+      >
         <div class="sm:pl-[2.5%] md:pl-[5%] flex items-center gap-2 sm:gap-4">
-          <img src={mapPin.src} class="h-10 w-10 md:h-16 md:w-16">
-            <span class="visually-hidden">
-              A map pin icon, white color on the blue background, indicating
-              office location section.
-            </span>
-          </img>
-          <h2 class="text-4xl sm:text-6xl md:text-7xl text-center font-accessdisplay font-bold uppercase pt-1 sm:pt-2">
+          <img
+            src={mapPin.src}
+            class="h-10 w-10 md:h-16 md:w-16 text-dust"
+            alt="Map Pin icon"
+          />
+          <span class="visually-hidden">
+            A map pin icon, white color on the blue background, indicating
+            office location section.
+          </span>
+          <h2
+            class="text-4xl sm:text-6xl md:text-7xl text-center font-accessdisplay font-bold uppercase pt-1 sm:pt-2"
+          >
             Office Location
           </h2>
         </div>
@@ -134,7 +149,9 @@ const pageInfo = {
           <p class="">
             Mind Matters Memphis is located in Clark Tower at 5100 Poplar
             Avenue,
-            <span class="font-bold font-accessbold"> Suite 322</span>, on the{" "}
+            <span class="font-bold font-accessbold"> Suite 322</span>, on the{
+              " "
+            }
             <span class="font-bold font-accessbold">3rd floor</span>.
           </p>
           <p class="">
@@ -142,27 +159,36 @@ const pageInfo = {
             North side of Poplar, between White Station and Mendenhall.
           </p>
           <div class="block sm:flex justify-center items-center">
-            <div class="flex items-center justify-center pt-2 sm:pt-0 gap-2 sm:gap-4 md:gap-6">
-              {/* <MapPin class="h-12 w-12 text-coral">
+            <div
+              class="flex items-center justify-center pt-2 sm:pt-0 gap-2 sm:gap-4 md:gap-6"
+            >
+              {
+                /* <MapPin class="h-12 w-12 text-coral">
                 <span class="visually-hidden">
                   A map pin icon, coral color, highlighting neighboring Google
                   Maps link to office location.
                 </span>
-              </MapPin> */}
+              </MapPin> */
+              }
               <a
                 href="https://maps.app.goo.gl/xzPcNcK3tTgqiAFS9"
                 class=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="flex gap-4 items-center p-4 px-8 border-2 border-inlet rounded-lg font-bold font-accessbold">
+                <button
+                  class="flex gap-4 items-center p-4 px-8 border-2 border-inlet rounded-lg font-bold font-accessbold"
+                >
                   <span>Get Directions</span>
-                  <img src={externalLink.src} class="h-8 w-8 text-inlet">
-                    <span class="visually-hidden">
-                      An external link icon, coral color, indicating the link
-                      opens in a new tab.
-                    </span>
-                  </img>
+                  <img
+                    src={externalLink.src}
+                    class="h-8 w-8 text-inlet"
+                    alt="External link icon"
+                  />
+                  <span class="visually-hidden">
+                    An external link icon, coral color, indicating the link
+                    opens in a new tab.
+                  </span>
                 </button>
               </a>
             </div>
@@ -179,19 +205,23 @@ const pageInfo = {
                   1. Ground Level Outside
                 </h4>
                 <p>
-                  If you park outside on the ground level, there are two
-                  “banks” of elevators in the lobby. Take the right bank,
-                  which goes to the lower floors.
+                  If you park outside on the ground level, there are two “banks”
+                  of elevators in the lobby. Take the right bank, which goes to
+                  the lower floors.
                 </p>
               </li>
               <li class="py-2 lg:pt-12">
-                <h4 class="text-2xl font-bold font-accessbold">2. Parking Garage</h4>
+                <h4 class="text-2xl font-bold font-accessbold">
+                  2. Parking Garage
+                </h4>
                 <p>
-                  {`If you park in the garage (which is often easier), enter the parking
+                  {
+                    `If you park in the garage (which is often easier), enter the parking
                 garage on the West side, bearing left to go to the upper part of
                 Level 3. You'll see a sign for the entrance to Tower Room, and glass
                 doors leading to the 3rd floor (our floor). You may park in any
-                space labeled for guests.`}
+                space labeled for guests.`
+                  }
                 </p>
                 <p class="pt-4">
                   When entering the third floor from the parking garage, our
@@ -201,15 +231,13 @@ const pageInfo = {
             </ul>
           </div>
 
-          <div class=" text-center italic font-accessitalic">
+          <div class="text-center italic font-accessitalic">
             <div>
               <img
                 src={clarkTower.src}
                 alt="Aerial view of Clark Tower, with west side parking garage entrance indicated."
               />
-              <p class="py-2">
-                Clark Tower, note parking garage entrance
-              </p>
+              <p class="py-2">Clark Tower, note parking garage entrance</p>
             </div>
             <div>
               <img

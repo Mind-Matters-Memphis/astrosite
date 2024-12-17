@@ -72,6 +72,8 @@ html {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+  color: #242424;
+  background-color: #f9f9f9;
 }
 .focusable.visually-hidden:focus {
   position: relative !important;

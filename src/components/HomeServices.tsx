@@ -48,6 +48,7 @@ const ServiceBlock = ({ service }: Props) => {
               <img
                 src={service.arrowSrc}
                 className={"h-8 w-8 justify-self-end text-" + service.color}
+                alt="→"
               />
               <span className="text-wrap col-span-10">{point}</span>
             </li>
@@ -73,8 +74,8 @@ export const HomeServices = () => {
   const services = [
     {
       title: "Neuropsychological Assessments",
-      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neuro-vasculr accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
-      url: "/clinical-neuropsychology",
+      text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neuro-vascular accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
+      url: "/astrosite/clinical-neuropsychology",
       points: [
         "Aid in the diagnosis of neurologic disorders",
         "Document the degree of cognitive and emotional/personality change due to a neurologic injury",
@@ -94,7 +95,7 @@ export const HomeServices = () => {
     {
       title: "Forensic Evaluations",
       text: "Objective, independent evaluations for civil legal matters pertaining to cognitive dysfunction. Services include:",
-      url: "/forensic-evaluations#top",
+      url: "/astrosite/forensic-evaluations",
       points: [
         "Neuropsychological IMEs",
         "Psychological-only IMEs",
@@ -109,7 +110,7 @@ export const HomeServices = () => {
     {
       title: "Cognitive Aging Evaluations",
       text: "Specialized care for individuals with memory disorders and their families, designed to:",
-      url: "/cognitive-aging#top",
+      url: "/astrosite/cognitive-aging",
       points: [
         "Maximize existing cognitive function",
         "Promote healthy cognitive aging",
