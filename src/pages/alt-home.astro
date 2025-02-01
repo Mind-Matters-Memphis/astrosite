@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import logo from "../assets/imgs/logo/logoColor.png";
 import waiting from "../assets/imgs/WomanAtTable.jpg";
 import { HomeServices } from "../components/HomeServices";
-import portrait from "../assets/imgs/Gould1.jpg";
+import portrait from "../assets/imgs/Gould.jpg";
 import referralForm from "../assets/forms/referral-form.pdf";
 import chevron from "../assets/imgs/icons/chevron-right.svg";
 import "../styles/global.css";
@@ -166,7 +166,7 @@ const pageInfo = {
         <img
           src={portrait.src}
           alt="Dr. Gould professional headshot"
-          class="h-64 w-64 object-cover object-top rounded-full"
+          class="h-64 w-64 object-cover object-center rounded-full"
         />
         <div class="p-4 my-4 text-xl text-start flex flex-col gap-2 md:gap-4">
           <p class="">
@@ -197,8 +197,8 @@ const pageInfo = {
           <img
             src={portrait.src}
             alt="Dr. Gould professional headshot"
-            class="object-cover object-top rounded-3xl shadow-xl"
-          />
+            class="object-cover rounded-3xl shadow-xl object-center"
+          /> 
         </div>
         <h2
           class="text-7xl p-4 font-accessdisplay font-bold uppercase text-center lg:col-start-1 lg:row-start-1"
