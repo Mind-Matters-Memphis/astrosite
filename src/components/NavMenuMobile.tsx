@@ -3,7 +3,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import arrow from "../assets/imgs/icons/arrow-right.svg";
 import chevron from "../assets/imgs/icons/chevron-down.svg";
 
-const urlBase = "/";
+const urlBase = "";
 
 interface NavMenuMobile {
   className?: string;
