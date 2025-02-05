@@ -45,7 +45,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
       <NavigationMenu.Item className="">
         <a
           href="/"
-          className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md"
+          className="p-4 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md"
         >
           Mind Matters Memphis
         </a>
