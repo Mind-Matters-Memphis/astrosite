@@ -69,7 +69,7 @@ export const Footer = () => {
           <span>Memphis, TN 38137</span>
         </p>
       ),
-      url: "https://maps.app.goo.gl/9RzA1WMAE9NfWH1B6",
+      url: "https://maps.app.goo.gl/QUmXcS82dcNkhv6M9",
     },
   ];
 
