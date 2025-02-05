@@ -26,19 +26,27 @@ const NavLink = ({ href, className, ...props }: Link) => {
 
   return (
     // <NavigationMenu.Link asChild active={isActive}>
-    <NavigationMenu.Link asChild >
-      <a href={urlBase + href} className={className + " " + linkStyle} {...props} />
+    <NavigationMenu.Link asChild>
+      <a
+        href={urlBase + href}
+        className={className + " " + linkStyle}
+        {...props}
+      />
     </NavigationMenu.Link>
   );
 };
 
-const linkStyle = "block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md";
+const linkStyle =
+  "block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md";
 
 const NavMenuMobile: React.FC<NavMenuMobile> = () => (
   <NavigationMenu.Root className="peer relative z-50 flex w-full group bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay lg:hidden *:w-full">
     <NavigationMenu.List className="flex items-center relative">
       <NavigationMenu.Item className="">
-        <a href={urlBase} className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md">
+        <a
+          href={urlBase}
+          className="p-4 px-2 sm:px-6 lg:p-8 sm:text-4xl block text-sand transition-all duration-300 ease-in-out hover:text-midnight hover:bg-sand hover:shadow-md"
+        >
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>
@@ -48,9 +56,16 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
       <NavigationMenu.Item>
         <NavigationMenu.Trigger className="flex gap-4 items-center p-4 px-2 sm:px-6 group">
           Menu
-          <img src={chevron.src} alt="" className="h-8 w-8 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" />
+          <img
+            src={chevron.src}
+            alt=""
+            className="h-8 w-8 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+          />
         </NavigationMenu.Trigger>
-        <NavigationMenu.Content className="absolute bg-midnight top-16 md:top-[72px] left-0 w-full min-h-screen" data-orientation="vertical" >
+        <NavigationMenu.Content
+          className="absolute bg-midnight top-16 md:top-[72px] left-0 w-full min-h-screen"
+          data-orientation="vertical"
+        >
           <NavigationMenu.Sub data-orientation="vertical" defaultValue="about">
             <NavigationMenu.List>
               <NavigationMenu.Item value="about">
@@ -63,7 +78,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
                   Clinical Neuropsychology
                 </NavLink>
                 <div className="pl-12 flex gap-4 items-center">
-                  <img src={arrow.src} alt="Arrow" className="h-8 w-8 mb-2"/>
+                  <img src={arrow.src} alt="Arrow" className="h-8 w-8 mb-2" />
                   <NavLink href="/forms" className="grow p-6">
                     Forms
                   </NavLink>
@@ -71,7 +86,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
               </NavigationMenu.Item>
               <NavigationMenu.Item>
                 <NavLink href="/forensic-evaluations" className="p-8">
-                  Forensic Evaluations
+                  Forensic
                 </NavLink>
               </NavigationMenu.Item>
               <NavigationMenu.Item>
@@ -92,26 +107,17 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
   </NavigationMenu.Root>
 );
 
-
 const ListItem = React.forwardRef<HTMLAnchorElement, ListItem>(
   ({ className, children, title, href, ...props }, forwardedRef) => (
     <li>
       <NavigationMenu.Link asChild>
-        <a
-          href={href}
-          className={"" + className}
-          {...props}
-          ref={forwardedRef}
-        >
-          <div className={linkStyle + " "}>
-            {title}
-          </div>
+        <a href={href} className={"" + className} {...props} ref={forwardedRef}>
+          <div className={linkStyle + " "}>{title}</div>
           <p className="">{children}</p>
         </a>
       </NavigationMenu.Link>
     </li>
   ),
 );
-
 
 export default NavMenuMobile;
