@@ -1,17 +1,17 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import react from '@astrojs/react';
-import tailwind from '@astrojs/tailwind';
+import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mindmattersmemphis.github.io',
-  base: 'astrosite',
+  site: "https://mindmattersmemphis.com",
+  base: "/",
   integrations: [react(), tailwind()],
   vite: {
     ssr: {
-      noExternal: ['@radix-ui/react-navigation-menu']
-    }
-  }
+      noExternal: ["@radix-ui/react-navigation-menu"],
+    },
+  },
 });

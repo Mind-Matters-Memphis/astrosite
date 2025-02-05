@@ -28,7 +28,7 @@ const ContactListItem = ({ icon, imgName, text, url }: Props) => {
 };
 
 export const Footer = () => {
-  const baseUrl = "/astrosite";
+  const baseUrl = "/";
   const contactItems = [
     {
       icon: phone,

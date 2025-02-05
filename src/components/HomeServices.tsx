@@ -75,7 +75,7 @@ export const HomeServices = () => {
     {
       title: "Clinical Assessments",
       text: "Comprehensive assessments of brain function (or changes in function) for patients with stroke/neurovascular accidents, traumatic brain injury (TBI), epilepsy, and more. Clinical assessments are used to:",
-      url: "/astrosite/clinical-neuropsychology",
+      url: "/clinical-neuropsychology",
       points: [
         "Aid in the diagnosis of neurologic disorders",
         "Document the degree of cognitive and emotional/personality change due to a neurologic injury",
@@ -103,7 +103,7 @@ export const HomeServices = () => {
     {
       title: "Forensic Evaluations",
       text: "Objective, independent evaluations for legal matters pertaining to cognitive dysfunction. Services include:",
-      url: "/astrosite/forensic-evaluations",
+      url: "/forensic-evaluations",
       points: [
         "Neuropsychological IMEs",
         "Psychological-only IMEs",
@@ -118,7 +118,7 @@ export const HomeServices = () => {
     {
       title: "Cognitive Aging Evaluations",
       text: "Specialized care for individuals with memory disorders and their families, designed to:",
-      url: "/astrosite/cognitive-aging",
+      url: "/cognitive-aging",
       points: [
         "Maximize existing cognitive function",
         "Promote healthy cognitive aging",

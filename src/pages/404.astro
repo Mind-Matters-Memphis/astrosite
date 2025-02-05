@@ -5,33 +5,37 @@ import errorIcon from "../assets/imgs/icons/alert-circle-outline.svg";
 
 const pageInfo = {
   title: "404 - Mind Matters Memphis",
-  description: "Custom page for 404 errors."
+  description: "Custom page for 404 errors.",
 };
 ---
 
 <Layout page={pageInfo}>
   <div class="p-4 sm:mt-10 md:mt-24 bg-dust font-accessbody text-midnight">
     <div class="flex justify-center">
-      <img src={logo.src} alt="Mind Matters Memphis logo" class="px-12 sm:max-w-96" />
+      <img
+        src={logo.src}
+        alt="Mind Matters Memphis logo"
+        class="px-12 sm:max-w-96"
+      />
     </div>
     <div class="flex justify-center items-center pt-6">
-      <img src={errorIcon.src} alt="!!!" class="h-24 w-24 md:h-36 md:w-36 md:m-6 text-coral" />
-      <h1 class="text-4xl md:text-6xl font-accessdisplay text-inlet">
-        Oops!
-      </h1>
+      <img
+        src={errorIcon.src}
+        alt="!!!"
+        class="h-24 w-24 md:h-36 md:w-36 md:m-6 text-coral"
+      />
+      <h1 class="text-4xl md:text-6xl font-accessdisplay text-inlet">Oops!</h1>
     </div>
     <div class="text-center py-4">
-      <p class="text-2xl md:text-4xl">
-        Sorry, the page could not be found.
-      </p>
+      <p class="text-2xl md:text-4xl">Sorry, the page could not be found.</p>
     </div>
     <div class="p-4 pb-8 sm:p-12 flex justify-center">
       <a
-        href="/astrosite"
+        href="/"
         class="p-4 px-8 sm:p-6 sm:px-10 transition-all duration-500 ease-in-out border-4 border-inlet font-semibold font-accessbold text-2xl rounded-lg shadow-lg relative active:left-[1px] active:top-[2px] active:shadow-none"
       >
         Return to Home
-    </a>
+      </a>
     </div>
   </div>
 </Layout>

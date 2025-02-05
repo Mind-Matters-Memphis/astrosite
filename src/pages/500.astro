@@ -8,7 +8,7 @@ interface Props {
 const { error } = Astro.props;
 const pageInfo = {
   title: "500 - Mind Matters Memphis",
-  description: "Custom error page for unexpected errors."
+  description: "Custom error page for unexpected errors.",
 };
 ---
 
@@ -22,7 +22,11 @@ const pageInfo = {
       />
     </div>
     <div class="flex justify-center items-center pt-6">
-      <img src={errorIcon.src} alt="!!!" class="h-24 w-24 md:h-36 md:w-36 md:m-6 text-coral" />
+      <img
+        src={errorIcon.src}
+        alt="!!!"
+        class="h-24 w-24 md:h-36 md:w-36 md:m-6 text-coral"
+      />
       <h1 class="text-4xl md:text-6xl font-accessdisplay text-inlet">Oops!</h1>
     </div>
     <div class="text-center py-4">
@@ -33,7 +37,7 @@ const pageInfo = {
     </div>
     <div class="p-4 pb-8 sm:p-12 flex justify-center">
       <a
-        href="/astrosite"
+        href="/"
         class="p-4 px-8 sm:p-6 sm:px-10 transition-all duration-500 ease-in-out border-4 border-inlet font-semibold font-accessbold text-2xl rounded-lg shadow-lg relative active:left-[1px] active:top-[2px] active:shadow-none"
       >
         Return to Home
