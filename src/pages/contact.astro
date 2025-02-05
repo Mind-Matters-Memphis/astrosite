@@ -5,6 +5,7 @@ import mapPin from "../assets/imgs/icons/map-marker-outline.svg";
 import externalLink from "../assets/imgs/icons/open-in-new.svg";
 import clarkTower from "../assets/imgs/ClarkTower.png";
 import parkingGarage from "../assets/imgs/ParkingGarage.png";
+import referral from "../assets/forms/referral-form.pdf";
 import "../assets/stylesheets/shapes.css";
 import "../styles/global.css";
 
@@ -90,11 +91,14 @@ const pageInfo = {
             Please complete the referral form and fax it - along with patient
             records - to 901-766-7550.
           </p>
-          <button
+          <a
+            href={referral}
+            rel="noopener noreferrer"
             class="bg-dust/80 font-bold font-accessbold sm:text-2xl p-4 sm:p-6 sm:px-12 border-2 border-midnight w-fit h-fit justify-self-center rounded-lg transition-all ease-in-out duration-200 relative shadow-md before:absolute before:bottom-[27.5%] before:left-[50%] before:h-[3px] before:w-0 before:origin-center before:rounded-sm before:bg-coral before:transition-all before:duration-300 before:ease-in-out before:content-[''] sm:hover:before:left-[13%] sm:hover:before:w-[74%] active:left-[1px] active:top-[2px] active:shadow-none"
           >
             Download Referral Form
-          </button>
+          </a>
+
           <p class="hidden sm:block px-4 text-center">
             For questions about referrals, please email{" "}
             <a href="mailto:referrals@mindmattersmemphis.com" class="underline">

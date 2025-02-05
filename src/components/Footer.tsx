@@ -155,7 +155,7 @@ export const Footer = () => {
       </div>
       <div className="p-4 pt-6 lg:mx-12">
         <div className="flex justify-center lg:justify-end text-center text-base sm:text-xl">
-          <p>&copy; 2024 Mind Matters Memphis, LLC. All rights reserved.</p>
+          <p>&copy; 2025 Mind Matters Memphis, LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
