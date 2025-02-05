@@ -81,7 +81,7 @@ export const Footer = () => {
       <div className="flex flex-col md:grid md:grid-rows-2 justify-center md:items-end border-b-2 border-sage lg:border-b-4">
         <div className="self-center md:self-start border-b-2 border-sage md:border-b-0 md:pt-6">
           <a
-            href={baseUrl}
+            href="/"
             className="flex justify-center cursor-pointer py-4"
             aria-label="Return to Mind Matters Memphis homepage"
           >

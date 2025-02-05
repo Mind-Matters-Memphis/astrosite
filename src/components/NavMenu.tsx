@@ -39,7 +39,7 @@ const NavMenu: React.FC<NavMenu> = () => (
   <NavigationMenu.Root className="hidden relative z-50 lg:flex w-full bg-midnight text-sand text-2xl shadow-sm group font-accessdisplay *:w-full">
     <NavigationMenu.List className="flex w-full items-center">
       <NavigationMenu.Item className="py-4 lg:py-8">
-        <a href={urlBase} className="p-4 lg:p-8 sm:text-4xl">
+        <a href={"/"} className="p-4 lg:p-8 sm:text-4xl">
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>
