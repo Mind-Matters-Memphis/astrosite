@@ -89,7 +89,7 @@ export const Footer = () => {
               src={logo.src}
               className="sm:max-w-[575px]"
               title="Mind Matters Logo"
-              role="Mind Matters Memphis logo image"
+              aria-label="Mind Matters Memphis logo image"
               alt="Mind Matters Memphis logo, with the 3 'M's depicting a bridge"
             />
           </a>

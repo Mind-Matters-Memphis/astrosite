@@ -50,9 +50,7 @@ const NavMenuMobile: React.FC<NavMenuMobile> = () => (
           Mind Matters Memphis
         </a>
       </NavigationMenu.Item>
-
-      <div id="spacer" className="grow"></div>
-
+      <NavigationMenu.Item id="spacer" className="grow"></NavigationMenu.Item>
       <NavigationMenu.Item>
         <NavigationMenu.Trigger className="flex gap-4 items-center p-4 px-2 sm:px-6 group">
           Menu
